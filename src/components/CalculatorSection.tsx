@@ -8,7 +8,7 @@ export function CalculatorSection() {
         <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl p-12 text-center text-white shadow-2xl">
           <div className="max-w-3xl mx-auto">
             <div className="bg-white/20 p-4 rounded-full w-fit mx-auto mb-8">
-              <Calculator className="w-12 h-12" />
+              <Calculator className="w-12 h-12" aria-label="Calculadora de viabilidade de Alojamento Local" />
             </div>
             
             <h2 className="text-4xl font-bold mb-6">

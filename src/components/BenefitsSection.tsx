@@ -48,7 +48,7 @@ export function BenefitsSection() {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
               <div className={`bg-gradient-to-br ${benefit.color} p-4 rounded-xl w-fit mb-6`}>
-                <benefit.icon className="w-8 h-8 text-white" />
+                <benefit.icon className="w-8 h-8 text-white" aria-label={`Ícone ${benefit.title}`} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {benefit.title}

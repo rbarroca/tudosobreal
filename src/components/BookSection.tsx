@@ -19,7 +19,7 @@ export function BookSection() {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-3 rounded-lg">
-                <BookOpen className="w-8 h-8 text-white" />
+                <BookOpen className="w-8 h-8 text-white" aria-label="Ícone do livro sobre Alojamento Local" />
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900">Sobre o Livro</h2>

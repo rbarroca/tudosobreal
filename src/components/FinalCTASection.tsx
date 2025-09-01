@@ -7,7 +7,7 @@ export function FinalCTASection() {
     <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="bg-white/10 p-4 rounded-full w-fit mx-auto mb-8">
-          <Bell className="w-12 h-12" />
+          <Bell className="w-12 h-12" aria-label="Notificação de lançamento do livro" />
         </div>
         
         <h2 className="text-4xl lg:text-5xl font-bold mb-6">
@@ -21,7 +21,7 @@ export function FinalCTASection() {
         
         <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-2xl mx-auto">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <Users className="w-6 h-6 text-blue-600" />
+            <Users className="w-6 h-6 text-blue-600" aria-label="Comunidade de interessados" />
             <span className="text-gray-900 font-semibold">Junte-se a centenas de interessados</span>
           </div>
           <EmailForm buttonText="Quero ser notificado do lançamento!" />

@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-gradient-to-br from-blue-600 to-blue-700 p-2 rounded-lg">
-                <BookOpen className="w-6 h-6 text-white" />
+                <BookOpen className="w-6 h-6 text-white" aria-label="Logo Tudo sobre Alojamento Local" />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Tudo sobre Alojamento Local</h3>
