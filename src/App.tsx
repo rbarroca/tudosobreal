@@ -3,7 +3,6 @@ import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { BookSection } from './components/BookSection';
 import { BenefitsSection } from './components/BenefitsSection';
-import { CalculatorSection } from './components/CalculatorSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
 
@@ -15,7 +14,6 @@ function App() {
         <HeroSection />
         <BookSection />
         <BenefitsSection />
-        <CalculatorSection />
         <FinalCTASection />
       </main>
       <Footer />
