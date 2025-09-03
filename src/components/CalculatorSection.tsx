@@ -20,7 +20,6 @@ export function CalculatorSection() {
               antes de avançar com o registo.
             </p>
             
-            <button className="bg-white text-orange-600 font-bold py-4 px-8 rounded-xl hover:bg-orange-50 transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center space-x-2 text-lg">
             <a 
               href="https://calculadoraal.pt/" 
               target="_blank" 
@@ -35,10 +34,4 @@ export function CalculatorSection() {
       </div>
     </section>
   );
-}
-  )
-}
-  )
-}
-  )
 }
