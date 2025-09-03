@@ -26,6 +26,12 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
 
   const saveEmailSubscription = async () => {
     try {
+      if (!supabase) {
+        setError('Funcionalidade de email não configurada. Contacte o administrador.');
+        setIsLoading(false);
+        return;
+      }
+
       const { error: insertError } = await supabase
         .from('email_subscribers')
         .insert([
