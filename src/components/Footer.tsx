@@ -26,7 +26,7 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-6 text-white">Links Úteis</h4>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">
+                <a href="https://calculadoraal.pt/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">
                   <Calculator className="w-4 h-4" />
                   <span>Calculadora AL</span>
                 </a>
