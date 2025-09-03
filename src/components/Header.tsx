@@ -13,7 +13,6 @@ export function Header() {
             <div>
               <h1 className="text-xl font-bold text-gray-900">Tudo sobre Alojamento Local</h1>
               <p className="text-sm text-gray-600">tudosobrealojamentolocal.com</p>
-            </div>
           </div>
         </div>
       </div>
