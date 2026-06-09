@@ -10,9 +10,43 @@ import { Footer } from './components/Footer';
 import { ArticlePage } from './pages/ArticlePage';
 import { BlogPage } from './pages/BlogPage';
 
+const homepageSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://tudosobrealojamentolocal.pt/#website',
+      url: 'https://tudosobrealojamentolocal.pt',
+      name: 'Tudo sobre Alojamento Local',
+      description: 'Guia completo para abrir e gerir Alojamento Local em Portugal',
+      inLanguage: 'pt-PT',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://tudosobrealojamentolocal.pt/guias?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@type': 'Organization',
+      '@id': 'https://tudosobrealojamentolocal.pt/#organization',
+      name: 'Tudo sobre Alojamento Local',
+      url: 'https://tudosobrealojamentolocal.pt',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://tudosobrealojamentolocal.pt/favicon.svg',
+      },
+      sameAs: [],
+    },
+  ],
+};
+
 function HomePage() {
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+      />
       <Header />
       <main>
         <HeroSection />
