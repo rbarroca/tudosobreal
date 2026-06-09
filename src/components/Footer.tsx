@@ -32,7 +32,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/fiscalidade-alojamento-local/impostos-al-2025" className="text-gray-300 hover:text-white transition-colors text-sm">
+                <Link to="/fiscalidade-alojamento-local/impostos-al-2026" className="text-gray-300 hover:text-white transition-colors text-sm">
                   Impostos AL 2026
                 </Link>
               </li>

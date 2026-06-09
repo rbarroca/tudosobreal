@@ -286,7 +286,7 @@ export const articles: Article[] = [
     `,
   },
   {
-    slug: 'fiscalidade-alojamento-local/impostos-al-2025',
+    slug: 'fiscalidade-alojamento-local/impostos-al-2026',
     title: 'Impostos no Alojamento Local em 2026 — Guia Completo de Fiscalidade',
     description: 'Tudo sobre a fiscalidade do Alojamento Local em Portugal em 2026. IRS, IVA, contribuições e taxas municipais explicados de forma simples e prática.',
     category: 'Fiscalidade AL',
