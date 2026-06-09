@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Calculator, Shield, Mail } from 'lucide-react';
+import { BookOpen, Calculator, Shield } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -63,12 +63,6 @@ export function Footer() {
                   <Shield className="w-4 h-4" />
                   <span>Política de Privacidade</span>
                 </Link>
-              </li>
-              <li>
-                <a href="#" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">
-                  <Mail className="w-4 h-4" />
-                  <span>Contacto</span>
-                </a>
               </li>
             </ul>
           </div>
