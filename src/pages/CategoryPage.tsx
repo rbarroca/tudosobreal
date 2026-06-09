@@ -87,7 +87,7 @@ export function CategoryPage() {
       <main className="bg-gray-50 min-h-screen">
         <div className={`bg-gradient-to-br ${meta.gradient} text-white py-16`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Breadcrumb items={[{ label: meta.title }]} />
+            <Breadcrumb items={[{ label: meta.title }]} variant="light" />
             <h1 className="text-3xl sm:text-4xl font-bold">{meta.title}</h1>
             <p className="mt-4 text-white/80 text-lg max-w-2xl">{meta.description}</p>
             <p className="mt-3 text-sm text-white/60">
