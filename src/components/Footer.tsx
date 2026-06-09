@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { BookOpen, Calculator, Shield, Mail } from 'lucide-react';
 
 export function Footer() {
@@ -13,15 +14,41 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Tudo sobre Alojamento Local</h3>
-                <p className="text-gray-400 text-sm">tudosobrealojamentolocal.com</p>
+                <p className="text-gray-400 text-sm">tudosobrealojamentolocal.pt</p>
               </div>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              O seu guia essencial para navegar no mundo do Alojamento Local em Portugal 
+              O seu guia essencial para navegar no mundo do Alojamento Local em Portugal
               com confiança e conhecimento.
             </p>
           </div>
-          
+
+          <div>
+            <h4 className="text-lg font-semibold mb-6 text-white">Guias Populares</h4>
+            <ul className="space-y-3">
+              <li>
+                <Link to="/como-abrir-alojamento-local" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  Como Abrir Alojamento Local
+                </Link>
+              </li>
+              <li>
+                <Link to="/fiscalidade-alojamento-local/impostos-al-2025" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  Impostos AL 2025
+                </Link>
+              </li>
+              <li>
+                <Link to="/legislacao-al/nova-lei-al-2024" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  Nova Lei AL 2024
+                </Link>
+              </li>
+              <li>
+                <Link to="/guias" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  Todos os Guias
+                </Link>
+              </li>
+            </ul>
+          </div>
+
           <div>
             <h4 className="text-lg font-semibold mb-6 text-white">Links Úteis</h4>
             <ul className="space-y-4">
@@ -45,24 +72,14 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          
-          <div>
-            <h4 className="text-lg font-semibold mb-6 text-white">Sobre o Projeto</h4>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              Dedicamo-nos a simplificar a informação sobre Alojamento Local, 
-              tornando-a acessível a todos os proprietários.
-            </p>
-            <div className="bg-gray-800 rounded-lg p-4">
-              <p className="text-sm text-gray-400">
-                Informação atualizada • Baseada na legislação atual • Linguagem simples
-              </p>
-            </div>
-          </div>
         </div>
-        
+
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Tudo sobre Alojamento Local. Todos os direitos reservados.
+            © 2025 Tudo sobre Alojamento Local. Todos os direitos reservados. |{' '}
+            <a href="https://tudosobrealojamentolocal.pt" className="hover:text-white transition-colors">
+              tudosobrealojamentolocal.pt
+            </a>
           </p>
         </div>
       </div>
