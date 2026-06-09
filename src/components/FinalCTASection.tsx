@@ -15,8 +15,8 @@ export function FinalCTASection() {
         </h2>
         
         <p className="text-xl text-blue-100 mb-12 leading-relaxed max-w-2xl mx-auto">
-          Inscreva-se já para ser notificado assim que o "Tudo sobre Alojamento Local" 
-          estiver disponível. Seja um dos primeiros a ter acesso ao guia mais completo do mercado.
+          Inscreva-se para ser avisado assim que o livro "Tudo sobre Alojamento Local"
+          estiver disponível. Seja um dos primeiros a ter acesso.
         </p>
         
         <div className="bg-white rounded-2xl p-8 shadow-2xl max-w-2xl mx-auto">

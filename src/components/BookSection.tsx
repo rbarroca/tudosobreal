@@ -23,20 +23,19 @@ export function BookSection() {
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-gray-900">Sobre o Livro</h2>
-                <p className="text-blue-600 font-medium">Guia Prático e Atualizado</p>
+                <p className="text-blue-600 font-medium">Em preparação</p>
               </div>
             </div>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Este livro compila toda a informação prática sobre Alojamento Local em Portugal, 
-              desde requisitos legais e registo até fiscalidade e boas práticas de gestão. 
-              Baseado no regime jurídico atualizado, oferece um guia completo e acessível 
-              para quem quer entrar neste mercado.
+              Este livro reúne toda a informação prática sobre Alojamento Local em Portugal,
+              desde o registo até à fiscalidade e à gestão do dia a dia. Escrito com base no
+              regime jurídico em vigor, para quem quer entrar neste mercado sem surpresas.
             </p>
             
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8">
               <p className="text-blue-800 font-medium text-center">
-                📋 Baseado no regime jurídico atualizado de 2024/2025
+                📋 Atualizado com as alterações da Lei 56/2023
               </p>
             </div>
           </div>

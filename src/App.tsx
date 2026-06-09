@@ -21,7 +21,7 @@ const homepageSchema = {
       '@id': 'https://tudosobrealojamentolocal.pt/#website',
       url: 'https://tudosobrealojamentolocal.pt',
       name: 'Tudo sobre Alojamento Local',
-      description: 'Guia completo para abrir e gerir Alojamento Local em Portugal',
+      description: 'Informação prática sobre Alojamento Local em Portugal',
       inLanguage: 'pt-PT',
       potentialAction: {
         '@type': 'SearchAction',
@@ -47,8 +47,8 @@ function HomePage() {
   return (
     <div className="min-h-screen">
       <PageMeta
-        title="Tudo sobre Alojamento Local | Guia completo para abrir e gerir AL em Portugal"
-        description="Aprenda passo a passo como abrir um Alojamento Local em Portugal. Guia simples, atualizado e prático para proprietários portugueses."
+        title="Tudo sobre Alojamento Local | Como abrir e gerir AL em Portugal"
+        description="Informação prática sobre como abrir, registar e gerir um Alojamento Local em Portugal. Requisitos legais, fiscalidade e boas práticas."
         canonical="/"
         keywords={['alojamento local portugal', 'como abrir alojamento local', 'guia al 2026']}
       />

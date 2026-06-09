@@ -14,7 +14,7 @@ export function HeroSection() {
                   <Star key={i} className="w-5 h-5 fill-current" />
                 ))}
               </div>
-              <span className="text-gray-600 font-medium">Guia Essencial</span>
+              <span className="text-gray-600 font-medium">Tudo sobre Alojamento Local</span>
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -25,8 +25,8 @@ export function HeroSection() {
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              O guia essencial para abrir e gerir o seu Alojamento Local em Portugal – 
-              explicado de forma simples e prática.
+              Informação prática e atualizada sobre Alojamento Local em Portugal —
+              desde o registo até à gestão do dia a dia.
             </p>
             
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
@@ -48,8 +48,8 @@ export function HeroSection() {
                 <div className="flex items-center space-x-3 mb-6">
                   <BookOpen className="w-8 h-8 text-blue-600" />
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Guia Completo</h3>
-                    <p className="text-gray-600">Alojamento Local 2026</p>
+                    <h3 className="text-2xl font-bold text-gray-900">Alojamento Local</h3>
+                    <p className="text-gray-600">tudosobrealojamentolocal.pt</p>
                   </div>
                 </div>
                 <div className="space-y-3 text-gray-700">

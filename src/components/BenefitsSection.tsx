@@ -37,7 +37,7 @@ export function BenefitsSection() {
             Porquê escolher este guia?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Desenvolvido para simplificar o complexo mundo do Alojamento Local em Portugal
+            Para que não perca tempo a tentar perceber o que a lei realmente exige
           </p>
         </div>
         
