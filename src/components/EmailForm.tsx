@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, User, CheckCircle, AlertCircle } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xkoabndy';
 
 interface EmailFormProps {
   className?: string;
@@ -14,51 +15,27 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
     setIsLoading(true);
-    
-    if (name && email) {
-      saveEmailSubscription();
-    }
-  };
 
-  const saveEmailSubscription = async () => {
     try {
-      if (!supabase) {
-        setError('Funcionalidade de email não configurada. Contacte o administrador.');
-        setIsLoading(false);
-        return;
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name: name.trim(), email: email.trim().toLowerCase() }),
+      });
+
+      if (res.ok) {
+        setIsSubmitted(true);
+        setName('');
+        setEmail('');
+      } else {
+        const data = await res.json();
+        setError(data?.errors?.[0]?.message ?? 'Erro ao enviar. Tente novamente.');
       }
-
-      const { error: insertError } = await supabase
-        .from('email_subscribers')
-        .insert([
-          {
-            name: name.trim(),
-            email: email.trim().toLowerCase()
-          }
-        ]);
-
-      if (insertError) {
-        if (insertError.code === '23505') {
-          setError('Este email já está registado!');
-        } else {
-          setError('Erro ao guardar. Tente novamente.');
-        }
-        setIsLoading(false);
-        return;
-      }
-
-      setIsSubmitted(true);
-      setName('');
-      setEmail('');
-      
-      setTimeout(() => {
-        setIsSubmitted(false);
-      }, 5000);
-    } catch (err) {
+    } catch {
       setError('Erro de conexão. Verifique a sua internet.');
     } finally {
       setIsLoading(false);
@@ -68,7 +45,7 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
     return (
       <div className={`bg-green-50 border border-green-200 rounded-lg p-6 text-center ${className}`}>
         <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
-        <div className="text-green-600 font-semibold mb-2">Obrigado, {name.split(' ')[0]}!</div>
+        <div className="text-green-600 font-semibold mb-2">Obrigado!</div>
         <div className="text-green-700">Será notificado assim que o livro estiver disponível.</div>
       </div>
     );
