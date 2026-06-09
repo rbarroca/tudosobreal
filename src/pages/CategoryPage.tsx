@@ -18,31 +18,31 @@ const categories: CategoryMeta[] = [
   {
     slug: 'como-abrir-alojamento-local',
     title: 'Como Abrir Alojamento Local',
-    description: 'Guias completos para quem quer abrir um Alojamento Local em Portugal — desde os requisitos legais até aos custos reais de abertura.',
+    description: 'Para quem quer abrir um Alojamento Local em Portugal e não sabe por onde começar.',
     gradient: 'from-blue-600 to-blue-800',
   },
   {
     slug: 'registar-alojamento-local',
     title: 'Registo de Alojamento Local',
-    description: 'Tudo sobre o processo de registo no RNAL — documentos necessários, como usar o Balcão Único Eletrónico e o que esperar após a submissão.',
+    description: 'Documentos, prazos e o que esperar do processo de registo no RNAL.',
     gradient: 'from-green-600 to-green-800',
   },
   {
     slug: 'fiscalidade-alojamento-local',
     title: 'Fiscalidade do Alojamento Local',
-    description: 'Guias práticos sobre impostos, IRS, taxas municipais e obrigações fiscais dos proprietários de Alojamento Local em Portugal.',
+    description: 'Impostos, IRS, taxas municipais e o que o fisco espera de si enquanto proprietário de AL.',
     gradient: 'from-orange-500 to-orange-700',
   },
   {
     slug: 'legislacao-al',
     title: 'Legislação do Alojamento Local',
-    description: 'Análise da legislação em vigor — da Lei 56/2023 às regras de condomínio. Fique a par das obrigações legais do seu AL.',
+    description: 'Da Lei 56/2023 às regras de condomínio: as obrigações legais que precisa de conhecer.',
     gradient: 'from-purple-600 to-purple-800',
   },
   {
     slug: 'gerir-alojamento-local',
     title: 'Gerir Alojamento Local',
-    description: 'Dicas e guias práticos para gerir o seu AL no dia a dia — plataformas, preços, ocupação e boas práticas de anfitrião.',
+    description: 'Plataformas, preços e boas práticas para gerir o seu alojamento no dia a dia.',
     gradient: 'from-teal-600 to-teal-800',
   },
 ];
