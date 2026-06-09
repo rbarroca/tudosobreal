@@ -9,6 +9,7 @@ import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
 import { ArticlePage } from './pages/ArticlePage';
 import { BlogPage } from './pages/BlogPage';
+import { CategoryPage } from './pages/CategoryPage';
 import { PrivacyPage } from './pages/PrivacyPage';
 
 const homepageSchema = {
@@ -69,8 +70,13 @@ function App() {
         <Route path="/guias" element={<BlogPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/politica-de-privacidade" element={<PrivacyPage />} />
-        <Route path="/:slug" element={<ArticlePage />} />
+        {/* Páginas de categoria — têm de vir antes de /:slug */}
+        <Route path="/registar-alojamento-local" element={<CategoryPage />} />
+        <Route path="/fiscalidade-alojamento-local" element={<CategoryPage />} />
+        <Route path="/legislacao-al" element={<CategoryPage />} />
+        <Route path="/gerir-alojamento-local" element={<CategoryPage />} />
         <Route path="/:cat/:slug" element={<ArticlePage />} />
+        <Route path="/:slug" element={<ArticlePage />} />
       </Routes>
     </BrowserRouter>
   );

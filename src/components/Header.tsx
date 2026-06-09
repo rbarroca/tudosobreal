@@ -7,10 +7,10 @@ export function Header() {
 
   const navLinks = [
     { label: 'Como Abrir AL', href: '/como-abrir-alojamento-local' },
-    { label: 'Fiscalidade', href: '/fiscalidade-alojamento-local/impostos-al-2025' },
-    { label: 'Legislação', href: '/legislacao-al/nova-lei-al-2024' },
-    { label: 'Gerir AL', href: '/gerir-alojamento-local/plataformas-airbnb-booking' },
-    { label: 'Guias', href: '/guias' },
+    { label: 'Registo AL', href: '/registar-alojamento-local' },
+    { label: 'Fiscalidade', href: '/fiscalidade-alojamento-local' },
+    { label: 'Legislação', href: '/legislacao-al' },
+    { label: 'Gerir AL', href: '/gerir-alojamento-local' },
   ];
 
   return (
