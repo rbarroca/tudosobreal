@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArticleCard } from '../components/ArticleCard';
 import { Breadcrumb } from '../components/Breadcrumb';
+import { PageMeta } from '../components/PageMeta';
 
 interface CategoryMeta {
   slug: string
@@ -76,6 +77,11 @@ export function CategoryPage() {
 
   return (
     <>
+      <PageMeta
+        title={meta.title}
+        description={meta.description}
+        canonical={`/${meta.slug}`}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Header />
       <main className="bg-gray-50 min-h-screen">

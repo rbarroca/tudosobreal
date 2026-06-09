@@ -1,10 +1,16 @@
 import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
+import { PageMeta } from '../components/PageMeta';
 
 export function PrivacyPage() {
   return (
     <>
+      <PageMeta
+        title="Política de Privacidade"
+        description="Política de privacidade do Tudo sobre Alojamento Local — como tratamos os seus dados pessoais ao abrigo do RGPD."
+        canonical="/politica-de-privacidade"
+      />
       <Header />
       <main className="bg-gray-50 min-h-screen">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

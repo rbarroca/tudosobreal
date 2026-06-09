@@ -5,6 +5,7 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { ArticleCard } from '../components/ArticleCard';
+import { PageMeta } from '../components/PageMeta';
 import { Calendar, RefreshCw } from 'lucide-react';
 
 export function ArticlePage() {
@@ -71,6 +72,13 @@ export function ArticlePage() {
 
   return (
     <>
+      <PageMeta
+        title={article.title}
+        description={article.description}
+        canonical={`/${article.slug}`}
+        ogType="article"
+        keywords={article.keywords}
+      />
       {schemas.map((s, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}

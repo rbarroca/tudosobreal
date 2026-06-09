@@ -2,11 +2,18 @@ import React from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArticleCard } from '../components/ArticleCard';
+import { PageMeta } from '../components/PageMeta';
 import { articles } from '../content/articles';
 
 export function BlogPage() {
   return (
     <>
+      <PageMeta
+        title="Guias e Artigos sobre Alojamento Local em Portugal"
+        description="Todos os guias práticos sobre Alojamento Local em Portugal — registo, fiscalidade, legislação e gestão. Informação atualizada para proprietários."
+        canonical="/guias"
+        keywords={['guias alojamento local', 'artigos AL portugal', 'informação alojamento local']}
+      />
       <Header />
       <main className="bg-gray-50 min-h-screen">
         <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">

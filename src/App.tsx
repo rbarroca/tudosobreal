@@ -11,6 +11,7 @@ import { ArticlePage } from './pages/ArticlePage';
 import { BlogPage } from './pages/BlogPage';
 import { CategoryPage } from './pages/CategoryPage';
 import { PrivacyPage } from './pages/PrivacyPage';
+import { PageMeta } from './components/PageMeta';
 
 const homepageSchema = {
   '@context': 'https://schema.org',
@@ -45,6 +46,12 @@ const homepageSchema = {
 function HomePage() {
   return (
     <div className="min-h-screen">
+      <PageMeta
+        title="Tudo sobre Alojamento Local | Guia completo para abrir e gerir AL em Portugal"
+        description="Aprenda passo a passo como abrir um Alojamento Local em Portugal. Guia simples, atualizado e prático para proprietários portugueses."
+        canonical="/"
+        keywords={['alojamento local portugal', 'como abrir alojamento local', 'guia al 2026']}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
