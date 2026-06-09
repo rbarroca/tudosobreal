@@ -28,8 +28,8 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: 'como-abrir-alojamento-local',
-    title: 'Como Abrir Alojamento Local em Portugal — Guia Passo a Passo 2026',
-    description: 'Guia completo e atualizado para abrir um Alojamento Local em Portugal em 2026. Desde os requisitos legais até ao registo no RNAL, tudo o que precisa de saber.',
+    title: 'Como Abrir Alojamento Local em Portugal em 2026',
+    description: 'O que precisa de saber antes de abrir um Alojamento Local em Portugal: requisitos legais, registo no RNAL e primeiros passos.',
     category: 'Guia Completo',
     categorySlug: 'como-abrir-alojamento-local',
     publishedAt: '2025-01-15',
@@ -57,13 +57,13 @@ export const articles: Article[] = [
 <p>O Alojamento Local (AL) é a atividade de prestação de serviços de alojamento temporário a turistas, em estabelecimentos que não reúnam os requisitos para serem considerados empreendimentos turísticos. Em Portugal, esta atividade é regulada pelo <strong>Decreto-Lei n.º 128/2014</strong>, de 29 de agosto, com as alterações introduzidas pela <strong>Lei 56/2023</strong>.</p>
 <p>Em termos práticos, o Alojamento Local inclui:</p>
 <ul>
-  <li><strong>Moradias</strong> — habitações autónomas, como uma vivenda ou um apartamento inteiro</li>
-  <li><strong>Apartamentos</strong> — a modalidade mais comum, com aluguer de todo o apartamento</li>
-  <li><strong>Estabelecimentos de hospedagem</strong> — incluindo hostels, com quartos partilhados ou privativos</li>
-  <li><strong>Quartos</strong> — aluguer de um ou mais quartos dentro da residência do proprietário</li>
+  <li><strong>Moradias</strong>: habitações autónomas, como uma vivenda ou um apartamento inteiro</li>
+  <li><strong>Apartamentos</strong>: a modalidade mais comum, com aluguer de todo o apartamento</li>
+  <li><strong>Estabelecimentos de hospedagem</strong>: incluindo hostels, com quartos partilhados ou privativos</li>
+  <li><strong>Quartos</strong>: aluguer de um ou mais quartos dentro da residência do proprietário</li>
 </ul>
 
-<h2>Passo 1 — Verifique se pode registar o seu AL</h2>
+<h2>Passo 1: Verifique se pode registar o seu AL</h2>
 <p>Antes de avançar com qualquer processo, é essencial verificar se o imóvel que pretende registar como AL cumpre as condições necessárias. Com as alterações da <strong>Lei 56/2023</strong>, existem novas restrições importantes:</p>
 
 <h3>Verificar o uso do imóvel</h3>
@@ -75,18 +75,18 @@ export const articles: Article[] = [
 <h3>Verificar as BHRU (Áreas de Contenção)</h3>
 <p>As câmaras municipais podem definir <strong>Áreas de Contenção</strong> onde o registo de novos AL está suspenso ou limitado. Em Lisboa, por exemplo, várias freguesias históricas têm limitações. Verifique junto da sua câmara municipal se a zona onde se situa o imóvel tem restrições em vigor.</p>
 
-<h2>Passo 2 — Reúna os documentos necessários</h2>
+<h2>Passo 2: Reúna os documentos necessários</h2>
 <p>Para registar um Alojamento Local em Portugal, precisa de reunir os seguintes documentos:</p>
 <ul>
-  <li><strong>Identificação do requerente</strong> — Cartão de Cidadão ou passaporte (e NIF)</li>
-  <li><strong>Caderneta predial urbana</strong> — documento que comprova a propriedade e uso do imóvel</li>
-  <li><strong>Autorização do proprietário</strong> — se for arrendatário, necessita de autorização expressa do senhorio</li>
-  <li><strong>Comprovativo de seguro</strong> — seguro de responsabilidade civil obrigatório para AL</li>
-  <li><strong>Livro de reclamações</strong> — obrigatório em formato físico ou eletrónico</li>
-  <li><strong>Planta do alojamento</strong> — em alguns municípios pode ser exigida</li>
+  <li><strong>Identificação do requerente</strong>: Cartão de Cidadão ou passaporte (e NIF)</li>
+  <li><strong>Caderneta predial urbana</strong>: documento que comprova a propriedade e uso do imóvel</li>
+  <li><strong>Autorização do proprietário</strong>: se for arrendatário, necessita de autorização expressa do senhorio</li>
+  <li><strong>Comprovativo de seguro</strong>: seguro de responsabilidade civil obrigatório para AL</li>
+  <li><strong>Livro de reclamações</strong>: obrigatório em formato físico ou eletrónico</li>
+  <li><strong>Planta do alojamento</strong>: em alguns municípios pode ser exigida</li>
 </ul>
 
-<h2>Passo 3 — Registe no Balcão Único Eletrónico</h2>
+<h2>Passo 3: Registe no Balcão Único Eletrónico</h2>
 <p>O registo de Alojamento Local é feito <strong>exclusivamente online</strong>, através do <a href="https://www.bue.gouv.pt" target="_blank" rel="noopener noreferrer">Balcão Único Eletrónico (BUE)</a>, disponível em bue.gouv.pt. O processo é relativamente simples:</p>
 <ol>
   <li>Aceda ao portal BUE e faça login com Chave Móvel Digital ou Cartão de Cidadão</li>
@@ -97,7 +97,7 @@ export const articles: Article[] = [
 </ol>
 <p>Após a submissão, receberá um número de registo provisório. O processo é baseado no princípio da <strong>mera comunicação prévia</strong>, o que significa que pode iniciar a atividade imediatamente após o registo, sem necessidade de aguardar aprovação formal.</p>
 
-<h2>Passo 4 — Obtenha o número RNAL</h2>
+<h2>Passo 4: Obtenha o número RNAL</h2>
 <p>O RNAL (Registo Nacional de Alojamento Local) é o número de registo atribuído ao seu estabelecimento. Este número é essencial porque:</p>
 <ul>
   <li>Deve ser exibido em toda a publicidade e anúncios nas plataformas (Airbnb, Booking.com, etc.)</li>
@@ -106,7 +106,7 @@ export const articles: Article[] = [
   <li>Fica inscrito no portal do Turismo de Portugal</li>
 </ul>
 
-<h2>Passo 5 — Registe a atividade no Fisco</h2>
+<h2>Passo 5: Registe a atividade no Fisco</h2>
 <p>Para poder cobrar pelas estadas e emitir recibos, precisa de estar registado para exercer atividade como trabalhador independente ou empresa. Os passos são:</p>
 <ol>
   <li>Aceda ao Portal das Finanças (e-fatura.irs.gov.pt)</li>
@@ -115,37 +115,37 @@ export const articles: Article[] = [
   <li>Para a maioria dos pequenos proprietários, o <strong>regime simplificado</strong> é suficiente</li>
 </ol>
 
-<h2>Passo 6 — Prepare o alojamento</h2>
+<h2>Passo 6: Prepare o alojamento</h2>
 <p>Para poder operar, o alojamento deve cumprir os requisitos mínimos de segurança e conforto estabelecidos na lei:</p>
 <ul>
-  <li><strong>Segurança</strong> — extintor, detetor de fumo, kit de primeiros socorros, manta de emergência</li>
-  <li><strong>Informações ao hóspede</strong> — lista de contactos de emergência, regras da casa, instruções de evacuação</li>
-  <li><strong>Condições de higiene</strong> — o espaço deve estar limpo e em boas condições</li>
-  <li><strong>Temperatura</strong> — sistema de aquecimento ou ar condicionado (recomendado)</li>
-  <li><strong>Internet</strong> — embora não obrigatória, é hoje uma expectativa dos hóspedes</li>
+  <li><strong>Segurança</strong>: extintor, detetor de fumo, kit de primeiros socorros, manta de emergência</li>
+  <li><strong>Informações ao hóspede</strong>: lista de contactos de emergência, regras da casa, instruções de evacuação</li>
+  <li><strong>Condições de higiene</strong>: o espaço deve estar limpo e em boas condições</li>
+  <li><strong>Temperatura</strong>: sistema de aquecimento ou ar condicionado (recomendado)</li>
+  <li><strong>Internet</strong>: embora não obrigatória, é hoje uma expectativa dos hóspedes</li>
 </ul>
 
-<h2>Passo 7 — Contrate um seguro de responsabilidade civil</h2>
+<h2>Passo 7: Contrate um seguro de responsabilidade civil</h2>
 <p>O seguro de responsabilidade civil para AL é <strong>obrigatório por lei</strong>. Cobre danos causados a hóspedes e terceiros durante o período de alojamento. O custo médio varia entre <strong>€300 e €500 por ano</strong>, dependendo da dimensão do imóvel e da cobertura escolhida.</p>
 <p>Principais seguradoras que oferecem produtos específicos para AL em Portugal: Fidelidade, Generali, Ageas, Liberty Seguros.</p>
 
-<h2>Passo 8 — Registe nas plataformas e comece a alugar</h2>
+<h2>Passo 8: Registe nas plataformas e comece a alugar</h2>
 <p>Com o registo RNAL obtido e o imóvel pronto, pode criar os seus anúncios nas plataformas de alojamento turístico:</p>
 <ul>
-  <li><strong>Airbnb</strong> — comissão média de 3% para o anfitrião</li>
-  <li><strong>Booking.com</strong> — comissão de cerca de 15% sobre o valor da reserva</li>
-  <li><strong>VRBO / HomeAway</strong> — alternativa focada em famílias e estadias mais longas</li>
-  <li><strong>Site próprio</strong> — evita comissões mas exige maior esforço de marketing</li>
+  <li><strong>Airbnb</strong>: comissão média de 3% para o anfitrião</li>
+  <li><strong>Booking.com</strong>: comissão de cerca de 15% sobre o valor da reserva</li>
+  <li><strong>VRBO / HomeAway</strong>: alternativa focada em famílias e estadias mais longas</li>
+  <li><strong>Site próprio</strong>: evita comissões mas exige maior esforço de marketing</li>
 </ul>
 <p>Lembre-se: em todas as plataformas é <strong>obrigatório indicar o número RNAL</strong> no anúncio. O incumprimento pode resultar em coimas.</p>
 
-<h2>Passo 9 — Cumpra as obrigações fiscais</h2>
+<h2>Passo 9: Cumpra as obrigações fiscais</h2>
 <p>Enquanto proprietário de AL, tem obrigações fiscais regulares:</p>
 <ul>
-  <li><strong>Emissão de recibos verdes</strong> — emita recibo eletrónico por cada reserva no Portal das Finanças</li>
-  <li><strong>IRS anual</strong> — declare os rendimentos de AL no IRS (categoria B ou F)</li>
-  <li><strong>Taxa turística municipal</strong> — em Lisboa (€2/noite), Porto (€2/noite) e outros municípios, deve cobrar e entregar a taxa à câmara</li>
-  <li><strong>Contribuição extraordinária do AL (CEAL)</strong> — imposto específico para proprietários de AL em zonas de pressão</li>
+  <li><strong>Emissão de recibos verdes</strong>: emita recibo eletrónico por cada reserva no Portal das Finanças</li>
+  <li><strong>IRS anual</strong>: declare os rendimentos de AL no IRS (categoria B ou F)</li>
+  <li><strong>Taxa turística municipal</strong>: em Lisboa (€2/noite), Porto (€2/noite) e outros municípios, deve cobrar e entregar a taxa à câmara</li>
+  <li><strong>Contribuição extraordinária do AL (CEAL)</strong>: imposto específico para proprietários de AL em zonas de pressão</li>
 </ul>
 
 <h2>Custos de abertura de um AL</h2>
@@ -178,7 +178,7 @@ export const articles: Article[] = [
   {
     slug: 'registar-alojamento-local/documentos-necessarios',
     title: 'Documentos Necessários para Registar Alojamento Local em Portugal',
-    description: 'Lista completa de todos os documentos exigidos para registar um Alojamento Local em Portugal. Saiba o que precisa de preparar antes de submeter o pedido.',
+    description: 'Lista dos documentos que precisa de ter prontos antes de submeter o pedido de registo do seu Alojamento Local.',
     category: 'Registo AL',
     categorySlug: 'registar-alojamento-local',
     publishedAt: '2025-01-20',
@@ -237,8 +237,8 @@ export const articles: Article[] = [
 <h2>5. Livro de reclamações</h2>
 <p>O livro de reclamações é obrigatório para todas as atividades de prestação de serviços ao público. Para AL, pode optar por:</p>
 <ul>
-  <li><strong>Formato físico</strong> — adquirido em papelaria ou pelo portal do livro de reclamações</li>
-  <li><strong>Formato eletrónico</strong> — através do portal <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener noreferrer">livroreclamacoes.pt</a></li>
+  <li><strong>Formato físico</strong>: adquirido em papelaria ou pelo portal do livro de reclamações</li>
+  <li><strong>Formato eletrónico</strong>: através do portal <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener noreferrer">livroreclamacoes.pt</a></li>
 </ul>
 <p>O livro eletrónico é recomendado por ser mais prático e ter custo reduzido (~€30/ano).</p>
 
@@ -287,8 +287,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/impostos-al-2026',
-    title: 'Impostos no Alojamento Local em 2026 — Guia Completo de Fiscalidade',
-    description: 'Tudo sobre a fiscalidade do Alojamento Local em Portugal em 2026. IRS, IVA, contribuições e taxas municipais explicados de forma simples e prática.',
+    title: 'Impostos no Alojamento Local em 2026',
+    description: 'IRS, IVA, CEAL e taxas municipais: o que paga, quando paga e como se organizar enquanto proprietário de AL.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-02-01',
@@ -337,10 +337,10 @@ export const articles: Article[] = [
 <p>A taxa turística é cobrada por noite, por hóspede adulto. Não é tecnicamente um imposto do proprietário — é cobrada ao hóspede — mas o proprietário é responsável por cobrá-la e entregá-la à câmara municipal.</p>
 <p>Valores em 2026:</p>
 <ul>
-  <li><strong>Lisboa</strong> — €2,00 por noite/pessoa (máximo 7 noites)</li>
-  <li><strong>Porto</strong> — €2,00 por noite/pessoa</li>
-  <li><strong>Cascais</strong> — €2,00 por noite/pessoa</li>
-  <li><strong>Sintra</strong> — €1,00 por noite/pessoa</li>
+  <li><strong>Lisboa</strong>: €2,00 por noite/pessoa (máximo 7 noites)</li>
+  <li><strong>Porto</strong>: €2,00 por noite/pessoa</li>
+  <li><strong>Cascais</strong>: €2,00 por noite/pessoa</li>
+  <li><strong>Sintra</strong>: €1,00 por noite/pessoa</li>
   <li>Outros municípios — consulte a câmara municipal local</li>
 </ul>
 
@@ -369,12 +369,12 @@ export const articles: Article[] = [
 
 <h2>Calendário fiscal do proprietário de AL</h2>
 <ul>
-  <li><strong>Janeiro–Abril</strong> — Emissão de recibos verdes mensais</li>
-  <li><strong>Março</strong> — Entrega da declaração de IVA (4.º trimestre do ano anterior)</li>
-  <li><strong>Abril</strong> — Início da campanha do IRS</li>
-  <li><strong>Junho</strong> — Prazo de entrega do IRS</li>
-  <li><strong>Julho</strong> — Pagamento do IRS (se aplicável)</li>
-  <li><strong>Setembro</strong> — Pagamento da CEAL</li>
+  <li><strong>Janeiro–Abril</strong>: Emissão de recibos verdes mensais</li>
+  <li><strong>Março</strong>: Entrega da declaração de IVA (4.º trimestre do ano anterior)</li>
+  <li><strong>Abril</strong>: Início da campanha do IRS</li>
+  <li><strong>Junho</strong>: Prazo de entrega do IRS</li>
+  <li><strong>Julho</strong>: Pagamento do IRS (se aplicável)</li>
+  <li><strong>Setembro</strong>: Pagamento da CEAL</li>
 </ul>
 
 <h2>Perguntas Frequentes</h2>
@@ -390,8 +390,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'legislacao-al/nova-lei-al-2024',
-    title: 'Nova Lei do Alojamento Local 2024 — O que Mudou com a Lei 56/2023',
-    description: 'Análise completa das alterações introduzidas pela Lei 56/2023 ao Alojamento Local em Portugal. Condomínios, BHRU, licenças e novas regras explicadas.',
+    title: 'O que Mudou no Alojamento Local com a Lei 56/2023',
+    description: 'O veto dos condomínios, as áreas de contenção e a nova transmissibilidade das licenças: o que a Lei 56/2023 alterou de facto.',
     category: 'Legislação AL',
     categorySlug: 'legislacao-al',
     publishedAt: '2025-02-15',
@@ -478,8 +478,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'registar-alojamento-local/registo-rnal',
-    title: 'Como Fazer o Registo RNAL — Passo a Passo Detalhado',
-    description: 'Guia passo a passo para registar o seu Alojamento Local no RNAL (Registo Nacional de Alojamento Local). Desde o acesso ao BUE até à obtenção do número de registo.',
+    title: 'Como Fazer o Registo RNAL',
+    description: 'Como aceder ao Balcão Único Eletrónico, o que preencher e o que esperar até ter o número de registo do seu AL.',
     category: 'Registo AL',
     categorySlug: 'registar-alojamento-local',
     publishedAt: '2025-03-01',
@@ -505,31 +505,31 @@ export const articles: Article[] = [
 <h2>Como aceder ao Balcão Único Eletrónico</h2>
 <p>O registo é feito exclusivamente através do <strong>Balcão Único Eletrónico (BUE)</strong>, em bue.gouv.pt. Para aceder, precisa de:</p>
 <ul>
-  <li><strong>Chave Móvel Digital</strong> — a forma mais prática de autenticação</li>
-  <li><strong>Cartão de Cidadão com PIN de autenticação</strong> — necessita de leitor de cartões</li>
-  <li><strong>eIDAS</strong> — para cidadãos europeus não portugueses</li>
+  <li><strong>Chave Móvel Digital</strong>: a forma mais prática de autenticação</li>
+  <li><strong>Cartão de Cidadão com PIN de autenticação</strong>: necessita de leitor de cartões</li>
+  <li><strong>eIDAS</strong>: para cidadãos europeus não portugueses</li>
 </ul>
 
 <h2>Processo passo a passo</h2>
 
-<h3>Passo 1 — Aceda ao BUE e faça login</h3>
+<h3>Passo 1: Aceda ao BUE e faça login</h3>
 <p>Acesse a bue.gouv.pt e clique em "Entrar" no canto superior direito. Selecione o método de autenticação preferido (Chave Móvel Digital é o mais simples).</p>
 
-<h3>Passo 2 — Localize o serviço de Alojamento Local</h3>
+<h3>Passo 2: Localize o serviço de Alojamento Local</h3>
 <p>Na barra de pesquisa, escreva "Alojamento Local" ou navegue pela categoria "Alojamento e Turismo". Selecione "Registar Estabelecimento de Alojamento Local".</p>
 
-<h3>Passo 3 — Preencha os dados do estabelecimento</h3>
+<h3>Passo 3: Preencha os dados do estabelecimento</h3>
 <p>Ser-lhe-á pedido para preencher:</p>
 <ul>
-  <li><strong>Tipo de estabelecimento</strong> — moradia, apartamento, estabelecimento de hospedagem ou quarto</li>
-  <li><strong>Endereço completo do imóvel</strong> — incluindo código postal</li>
-  <li><strong>Capacidade máxima</strong> — número máximo de hóspedes</li>
+  <li><strong>Tipo de estabelecimento</strong>: moradia, apartamento, estabelecimento de hospedagem ou quarto</li>
+  <li><strong>Endereço completo do imóvel</strong>: incluindo código postal</li>
+  <li><strong>Capacidade máxima</strong>: número máximo de hóspedes</li>
   <li><strong>Número de quartos</strong></li>
-  <li><strong>Dados do titular</strong> — nome, NIF, contacto</li>
+  <li><strong>Dados do titular</strong>: nome, NIF, contacto</li>
   <li><strong>Nome do estabelecimento</strong> (opcional, mas recomendado)</li>
 </ul>
 
-<h3>Passo 4 — Carregue os documentos</h3>
+<h3>Passo 4: Carregue os documentos</h3>
 <p>Faça upload dos documentos necessários (em PDF ou JPG):</p>
 <ul>
   <li>Caderneta predial</li>
@@ -537,10 +537,10 @@ export const articles: Article[] = [
   <li>Autorização do proprietário (se arrendatário)</li>
 </ul>
 
-<h3>Passo 5 — Submeta e obtenha o número provisório</h3>
+<h3>Passo 5: Submeta e obtenha o número provisório</h3>
 <p>Após submissão, o sistema gera imediatamente um <strong>número de registo provisório</strong>. Este número já pode ser usado nos anúncios enquanto aguarda a confirmação definitiva.</p>
 
-<h3>Passo 6 — Aguarde confirmação da câmara</h3>
+<h3>Passo 6: Aguarde confirmação da câmara</h3>
 <p>A câmara municipal tem <strong>60 dias</strong> para verificar a conformidade do pedido. Se tudo estiver correto, o registo torna-se definitivo. Se houver problemas, a câmara contactá-lo-á para esclarecimentos.</p>
 
 <h2>O número RNAL — como usar</h2>
@@ -577,8 +577,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'gerir-alojamento-local/plataformas-airbnb-booking',
-    title: 'Airbnb vs Booking.com — Qual a Melhor Plataforma para o seu AL?',
-    description: 'Comparação completa entre Airbnb e Booking.com para proprietários de Alojamento Local em Portugal. Comissões, perfil de hóspede, prós e contras de cada plataforma.',
+    title: 'Airbnb ou Booking.com: qual a melhor plataforma para o seu AL?',
+    description: 'Comissões, perfil de hóspede e prós e contras de cada plataforma — para quem ainda não sabe onde anunciar o seu Alojamento Local.',
     category: 'Gerir AL',
     categorySlug: 'gerir-alojamento-local',
     publishedAt: '2025-03-15',
@@ -597,8 +597,8 @@ export const articles: Article[] = [
 
 <h3>Comissões do Airbnb</h3>
 <ul>
-  <li><strong>Taxa para anfitriões</strong> — entre 3% e 5% por reserva (modelo mais comum: ~3%)</li>
-  <li><strong>Taxa para hóspedes</strong> — entre 6% e 12% adicional cobrada ao hóspede</li>
+  <li><strong>Taxa para anfitriões</strong>: entre 3% e 5% por reserva (modelo mais comum: ~3%)</li>
+  <li><strong>Taxa para hóspedes</strong>: entre 6% e 12% adicional cobrada ao hóspede</li>
   <li>Total retirado da transação: tipicamente <strong>14-16%</strong> combinado</li>
 </ul>
 
@@ -631,7 +631,7 @@ export const articles: Article[] = [
 
 <h3>Comissões do Booking.com</h3>
 <ul>
-  <li><strong>Taxa para proprietários</strong> — entre <strong>15% e 18%</strong> por reserva</li>
+  <li><strong>Taxa para proprietários</strong>: entre <strong>15% e 18%</strong> por reserva</li>
   <li>Sem taxa adicional para hóspedes (preço que veem é o preço final)</li>
   <li>Comissão mais alta que o Airbnb, mas o preço apresentado ao hóspede é mais transparente</li>
 </ul>
@@ -701,10 +701,10 @@ export const articles: Article[] = [
 
 <h2>Outras plataformas a considerar</h2>
 <ul>
-  <li><strong>VRBO / HomeAway</strong> — forte para famílias e estadias longas, mercado americano</li>
-  <li><strong>Expedia</strong> — boa visibilidade internacional</li>
-  <li><strong>HomeToGo</strong> — agregador europeu crescente</li>
-  <li><strong>Site próprio</strong> — sem comissões, mas exige investimento em SEO e marketing</li>
+  <li><strong>VRBO / HomeAway</strong>: forte para famílias e estadias longas, mercado americano</li>
+  <li><strong>Expedia</strong>: boa visibilidade internacional</li>
+  <li><strong>HomeToGo</strong>: agregador europeu crescente</li>
+  <li><strong>Site próprio</strong>: sem comissões, mas exige investimento em SEO e marketing</li>
 </ul>
 
 <h2>Perguntas Frequentes</h2>
@@ -717,8 +717,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/taxas-municipais-al',
-    title: 'Taxa Turística Municipal no Alojamento Local — Guia Completo 2026',
-    description: 'Tudo sobre a taxa turística municipal no Alojamento Local. Quem paga, quanto é, como cobrar e como entregar à câmara. Valores atualizados para 2025.',
+    title: 'Taxa Turística Municipal no Alojamento Local em 2026',
+    description: 'Quem paga, quanto é em cada município, como cobrar aos hóspedes e como entregar à câmara.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-03-20',
@@ -739,14 +739,14 @@ export const articles: Article[] = [
 <h2>Valores da taxa turística em 2026</h2>
 <p>Cada município define o seu próprio valor. Em 2026, os principais valores são:</p>
 <ul>
-  <li><strong>Lisboa</strong> — €2,00 por noite/pessoa (máximo 7 noites consecutivas por estada)</li>
-  <li><strong>Porto</strong> — €2,00 por noite/pessoa</li>
-  <li><strong>Cascais</strong> — €2,00 por noite/pessoa (de março a outubro), €1,00 (novembro a fevereiro)</li>
-  <li><strong>Sintra</strong> — €1,00 por noite/pessoa</li>
-  <li><strong>Faro</strong> — €1,50 por noite/pessoa</li>
-  <li><strong>Albufeira</strong> — €1,50 por noite/pessoa</li>
-  <li><strong>Funchal</strong> — €2,00 por noite/pessoa</li>
-  <li><strong>Setúbal</strong> — €1,00 por noite/pessoa</li>
+  <li><strong>Lisboa</strong>: €2,00 por noite/pessoa (máximo 7 noites consecutivas por estada)</li>
+  <li><strong>Porto</strong>: €2,00 por noite/pessoa</li>
+  <li><strong>Cascais</strong>: €2,00 por noite/pessoa (de março a outubro), €1,00 (novembro a fevereiro)</li>
+  <li><strong>Sintra</strong>: €1,00 por noite/pessoa</li>
+  <li><strong>Faro</strong>: €1,50 por noite/pessoa</li>
+  <li><strong>Albufeira</strong>: €1,50 por noite/pessoa</li>
+  <li><strong>Funchal</strong>: €2,00 por noite/pessoa</li>
+  <li><strong>Setúbal</strong>: €1,00 por noite/pessoa</li>
 </ul>
 <p><strong>Nota:</strong> Muitos municípios ainda não têm taxa turística. Verifique sempre junto da câmara municipal da sua área.</p>
 
@@ -800,8 +800,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'legislacao-al/condominio-alojamento-local',
-    title: 'Condomínio e Alojamento Local — Direitos e Obrigações em 2026',
-    description: 'Tudo o que precisa de saber sobre a relação entre condomínio e Alojamento Local após a Lei 56/2023. Pode o condomínio proibir o seu AL? Como funciona o processo?',
+    title: 'Condomínio e Alojamento Local: o que diz a lei',
+    description: 'Pode o condomínio proibir o seu AL? Como funciona o processo de votação e o que fazer se a deliberação for contra si.',
     category: 'Legislação AL',
     categorySlug: 'legislacao-al',
     publishedAt: '2025-04-01',
@@ -887,8 +887,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/irs-alojamento-local',
-    title: 'IRS e Alojamento Local — Categoria B vs Categoria F em 2026',
-    description: 'Guia completo sobre como declarar rendimentos de Alojamento Local no IRS. Diferença entre Categoria B e Categoria F, vantagens de cada opção e como calcular o imposto.',
+    title: 'IRS no Alojamento Local: Categoria B ou Categoria F?',
+    description: 'As diferenças entre as duas categorias, quando cada uma compensa e como preencher a declaração de IRS se tiver rendimentos de AL.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-04-15',
@@ -993,8 +993,8 @@ export const articles: Article[] = [
   },
   {
     slug: 'quanto-custa-abrir-alojamento-local',
-    title: 'Quanto Custa Abrir um Alojamento Local em Portugal? — Todos os Custos',
-    description: 'Análise completa de todos os custos para abrir e operar um Alojamento Local em Portugal. Desde o registo até ao equipamento, saiba quanto precisa de investir.',
+    title: 'Quanto Custa Abrir um Alojamento Local em Portugal',
+    description: 'Do registo ao seguro, do equipamento às obras: quanto é preciso investir para arrancar com um AL em Portugal.',
     category: 'Guia Completo',
     categorySlug: 'como-abrir-alojamento-local',
     publishedAt: '2025-05-01',
