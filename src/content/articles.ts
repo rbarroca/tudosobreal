@@ -16,13 +16,13 @@ export interface Article {
 export const articles: Article[] = [
   {
     slug: 'como-abrir-alojamento-local',
-    title: 'Como Abrir Alojamento Local em Portugal — Guia Passo a Passo 2025',
-    description: 'Guia completo e atualizado para abrir um Alojamento Local em Portugal em 2025. Desde os requisitos legais até ao registo no RNAL, tudo o que precisa de saber.',
+    title: 'Como Abrir Alojamento Local em Portugal — Guia Passo a Passo 2026',
+    description: 'Guia completo e atualizado para abrir um Alojamento Local em Portugal em 2026. Desde os requisitos legais até ao registo no RNAL, tudo o que precisa de saber.',
     category: 'Guia Completo',
     categorySlug: 'como-abrir-alojamento-local',
     publishedAt: '2025-01-15',
-    updatedAt: '2025-06-01',
-    keywords: ['como abrir alojamento local', 'abrir AL portugal', 'guia al 2025', 'alojamento local passo a passo'],
+    updatedAt: '2026-06-09',
+    keywords: ['como abrir alojamento local', 'abrir AL portugal', 'guia al 2026', 'alojamento local passo a passo'],
     content: `
 <h2>O que é o Alojamento Local?</h2>
 <p>O Alojamento Local (AL) é a atividade de prestação de serviços de alojamento temporário a turistas, em estabelecimentos que não reúnam os requisitos para serem considerados empreendimentos turísticos. Em Portugal, esta atividade é regulada pelo <strong>Decreto-Lei n.º 128/2014</strong>, de 29 de agosto, com as alterações introduzidas pela <strong>Lei 56/2023</strong>.</p>
@@ -153,7 +153,7 @@ export const articles: Article[] = [
     category: 'Registo AL',
     categorySlug: 'registar-alojamento-local',
     publishedAt: '2025-01-20',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['documentos alojamento local', 'registo AL documentos', 'o que preciso para abrir AL', 'documentação AL portugal'],
     content: `
 <h2>Documentos obrigatórios para registar AL</h2>
@@ -253,13 +253,13 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/impostos-al-2025',
-    title: 'Impostos no Alojamento Local em 2025 — Guia Completo de Fiscalidade',
-    description: 'Tudo sobre a fiscalidade do Alojamento Local em Portugal em 2025. IRS, IVA, contribuições e taxas municipais explicados de forma simples e prática.',
+    title: 'Impostos no Alojamento Local em 2026 — Guia Completo de Fiscalidade',
+    description: 'Tudo sobre a fiscalidade do Alojamento Local em Portugal em 2026. IRS, IVA, contribuições e taxas municipais explicados de forma simples e prática.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-02-01',
-    updatedAt: '2025-06-01',
-    keywords: ['impostos alojamento local 2025', 'fiscalidade AL portugal', 'IRS alojamento local', 'IVA AL', 'contribuição AL'],
+    updatedAt: '2026-06-09',
+    keywords: ['impostos alojamento local 2026', 'fiscalidade AL portugal', 'IRS alojamento local', 'IVA AL', 'contribuição AL'],
     content: `
 <h2>A fiscalidade do Alojamento Local em Portugal</h2>
 <p>A fiscalidade do Alojamento Local (AL) é um dos temas que mais dúvidas levanta entre os proprietários. Em Portugal, os rendimentos de AL estão sujeitos a vários impostos e contribuições. Este guia explica todos de forma clara.</p>
@@ -296,7 +296,7 @@ export const articles: Article[] = [
 
 <h2>4. Taxa Turística Municipal</h2>
 <p>A taxa turística é cobrada por noite, por hóspede adulto. Não é tecnicamente um imposto do proprietário — é cobrada ao hóspede — mas o proprietário é responsável por cobrá-la e entregá-la à câmara municipal.</p>
-<p>Valores em 2025:</p>
+<p>Valores em 2026:</p>
 <ul>
   <li><strong>Lisboa</strong> — €2,00 por noite/pessoa (máximo 7 noites)</li>
   <li><strong>Porto</strong> — €2,00 por noite/pessoa</li>
@@ -356,7 +356,7 @@ export const articles: Article[] = [
     category: 'Legislação AL',
     categorySlug: 'legislacao-al',
     publishedAt: '2025-02-15',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['lei 56/2023 alojamento local', 'nova lei AL 2024', 'alterações AL portugal', 'BHRU alojamento local'],
     content: `
 <h2>A Lei 56/2023 e o impacto no Alojamento Local</h2>
@@ -439,7 +439,7 @@ export const articles: Article[] = [
     category: 'Registo AL',
     categorySlug: 'registar-alojamento-local',
     publishedAt: '2025-03-01',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['RNAL registo', 'como registar AL RNAL', 'Balcão Único Eletrónico AL', 'número RNAL como obter'],
     content: `
 <h2>O que é o RNAL?</h2>
@@ -525,7 +525,7 @@ export const articles: Article[] = [
     category: 'Gerir AL',
     categorySlug: 'gerir-alojamento-local',
     publishedAt: '2025-03-15',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['airbnb vs booking alojamento local', 'melhor plataforma AL portugal', 'comissões airbnb booking', 'onde anunciar AL'],
     content: `
 <h2>Airbnb vs Booking.com — a comparação que todo o proprietário precisa</h2>
@@ -656,13 +656,13 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/taxas-municipais-al',
-    title: 'Taxa Turística Municipal no Alojamento Local — Guia Completo 2025',
+    title: 'Taxa Turística Municipal no Alojamento Local — Guia Completo 2026',
     description: 'Tudo sobre a taxa turística municipal no Alojamento Local. Quem paga, quanto é, como cobrar e como entregar à câmara. Valores atualizados para 2025.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-03-20',
-    updatedAt: '2025-06-01',
-    keywords: ['taxa turística municipal AL', 'taxa turística lisboa porto', 'como cobrar taxa turística', 'taxa turística alojamento local 2025'],
+    updatedAt: '2026-06-09',
+    keywords: ['taxa turística municipal AL', 'taxa turística lisboa porto', 'como cobrar taxa turística', 'taxa turística alojamento local 2026'],
     content: `
 <h2>O que é a taxa turística municipal?</h2>
 <p>A taxa turística (ou taxa de dormida) é um valor cobrado por cada noite de hospedagem, por hóspede adulto, em estabelecimentos de alojamento turístico — incluindo o Alojamento Local. É uma taxa <strong>cobrada ao hóspede</strong>, mas o proprietário do AL é responsável por a recolher e entregar à câmara municipal.</p>
@@ -670,8 +670,8 @@ export const articles: Article[] = [
 <h2>Quem paga a taxa turística?</h2>
 <p>A taxa é paga pelo <strong>hóspede</strong>, não pelo proprietário. O proprietário funciona como intermediário: cobra ao hóspede e entrega à câmara. No entanto, se o proprietário não cobrar ao hóspede, é ele quem fica responsável pelo pagamento.</p>
 
-<h2>Valores da taxa turística em 2025</h2>
-<p>Cada município define o seu próprio valor. Em 2025, os principais valores são:</p>
+<h2>Valores da taxa turística em 2026</h2>
+<p>Cada município define o seu próprio valor. Em 2026, os principais valores são:</p>
 <ul>
   <li><strong>Lisboa</strong> — €2,00 por noite/pessoa (máximo 7 noites consecutivas por estada)</li>
   <li><strong>Porto</strong> — €2,00 por noite/pessoa</li>
@@ -734,12 +734,12 @@ export const articles: Article[] = [
   },
   {
     slug: 'legislacao-al/condominio-alojamento-local',
-    title: 'Condomínio e Alojamento Local — Direitos e Obrigações em 2025',
+    title: 'Condomínio e Alojamento Local — Direitos e Obrigações em 2026',
     description: 'Tudo o que precisa de saber sobre a relação entre condomínio e Alojamento Local após a Lei 56/2023. Pode o condomínio proibir o seu AL? Como funciona o processo?',
     category: 'Legislação AL',
     categorySlug: 'legislacao-al',
     publishedAt: '2025-04-01',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['condomínio alojamento local', 'condomínio pode proibir AL', 'lei condomínio AL 2024', 'veto condomínio AL'],
     content: `
 <h2>O condomínio e o Alojamento Local — o que mudou</h2>
@@ -816,13 +816,13 @@ export const articles: Article[] = [
   },
   {
     slug: 'fiscalidade-alojamento-local/irs-alojamento-local',
-    title: 'IRS e Alojamento Local — Categoria B vs Categoria F em 2025',
+    title: 'IRS e Alojamento Local — Categoria B vs Categoria F em 2026',
     description: 'Guia completo sobre como declarar rendimentos de Alojamento Local no IRS. Diferença entre Categoria B e Categoria F, vantagens de cada opção e como calcular o imposto.',
     category: 'Fiscalidade AL',
     categorySlug: 'fiscalidade-alojamento-local',
     publishedAt: '2025-04-15',
-    updatedAt: '2025-06-01',
-    keywords: ['IRS alojamento local categoria B', 'IRS AL categoria F', 'como declarar AL IRS', 'IRS AL 2025'],
+    updatedAt: '2026-06-09',
+    keywords: ['IRS alojamento local categoria B', 'IRS AL categoria F', 'como declarar AL IRS', 'IRS AL 2026'],
     content: `
 <h2>Como declarar rendimentos de AL no IRS</h2>
 <p>Os rendimentos provenientes de Alojamento Local devem ser declarados no IRS anualmente, na campanha fiscal que decorre entre abril e junho. A grande questão é: em que categoria declarar?</p>
@@ -922,7 +922,7 @@ export const articles: Article[] = [
     category: 'Guia Completo',
     categorySlug: 'como-abrir-alojamento-local',
     publishedAt: '2025-05-01',
-    updatedAt: '2025-06-01',
+    updatedAt: '2026-06-09',
     keywords: ['quanto custa abrir alojamento local', 'custos AL portugal', 'investimento alojamento local', 'abrir AL Portugal quanto custa'],
     content: `
 <h2>Os custos reais de abrir um Alojamento Local</h2>
@@ -943,7 +943,7 @@ export const articles: Article[] = [
 <p>Se precisar de apoio legal para rever contratos, verificar a conformidade do imóvel ou lidar com questões de condomínio, conte com custos de <strong>€200 a €800</strong> por hora/sessão.</p>
 
 <h2>Custos de seguro</h2>
-<p>O seguro de responsabilidade civil é <strong>obrigatório por lei</strong>. Valores médios em 2025:</p>
+<p>O seguro de responsabilidade civil é <strong>obrigatório por lei</strong>. Valores médios em 2026:</p>
 <ul>
   <li>Apartamento T1-T2: <strong>€250 a €400/ano</strong></li>
   <li>Apartamento T3 ou maior: <strong>€350 a €500/ano</strong></li>

@@ -49,7 +49,7 @@ export function HeroSection() {
                   <BookOpen className="w-8 h-8 text-blue-600" />
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900">Guia Completo</h3>
-                    <p className="text-gray-600">Alojamento Local 2025</p>
+                    <p className="text-gray-600">Alojamento Local 2026</p>
                   </div>
                 </div>
                 <div className="space-y-3 text-gray-700">

@@ -33,7 +33,7 @@ export function Footer() {
               </li>
               <li>
                 <Link to="/fiscalidade-alojamento-local/impostos-al-2025" className="text-gray-300 hover:text-white transition-colors text-sm">
-                  Impostos AL 2025
+                  Impostos AL 2026
                 </Link>
               </li>
               <li>
@@ -76,7 +76,7 @@ export function Footer() {
 
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            © 2025 Tudo sobre Alojamento Local. Todos os direitos reservados. |{' '}
+            © 2026 Tudo sobre Alojamento Local. Todos os direitos reservados. |{' '}
             <a href="https://tudosobrealojamentolocal.pt" className="hover:text-white transition-colors">
               tudosobrealojamentolocal.pt
             </a>
