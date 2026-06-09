@@ -1,5 +1,15 @@
 // src/content/articles.ts
 
+export interface FaqItem {
+  question: string
+  answer: string
+}
+
+export interface HowToStep {
+  name: string
+  text: string
+}
+
 export interface Article {
   slug: string
   title: string
@@ -10,6 +20,8 @@ export interface Article {
   updatedAt: string
   content: string
   keywords: string[]
+  faqItems?: FaqItem[]
+  howToSteps?: HowToStep[]
   schema?: object
 }
 
@@ -23,6 +35,23 @@ export const articles: Article[] = [
     publishedAt: '2025-01-15',
     updatedAt: '2026-06-09',
     keywords: ['como abrir alojamento local', 'abrir AL portugal', 'guia al 2026', 'alojamento local passo a passo'],
+    howToSteps: [
+      { name: 'Verifique se pode registar o seu AL', text: 'Confirme que o imóvel tem uso habitacional, que o condomínio não deliberou contra e que a zona não está em área de contenção (BHRU).' },
+      { name: 'Reúna os documentos necessários', text: 'Prepare caderneta predial, identificação, comprovativo de seguro de responsabilidade civil e, se arrendatário, autorização escrita do senhorio.' },
+      { name: 'Registe no Balcão Único Eletrónico', text: 'Aceda a bue.gouv.pt, faça login com Chave Móvel Digital e submeta o formulário de registo de Alojamento Local.' },
+      { name: 'Obtenha o número RNAL', text: 'Após submissão, recebe imediatamente um número de registo provisório. O número RNAL definitivo é atribuído após verificação da câmara (até 60 dias).' },
+      { name: 'Registe a atividade no Fisco', text: 'Abra atividade como trabalhador independente no Portal das Finanças com o CAE adequado ao tipo de AL.' },
+      { name: 'Prepare o alojamento', text: 'Instale extintor, detetor de fumo, kit de primeiros socorros e prepare as informações de emergência para os hóspedes.' },
+      { name: 'Contrate um seguro de responsabilidade civil', text: 'O seguro é obrigatório por lei. Custo médio entre €300 e €500 por ano.' },
+      { name: 'Registe nas plataformas', text: 'Crie anúncios no Airbnb e/ou Booking.com indicando obrigatoriamente o número RNAL.' },
+      { name: 'Cumpra as obrigações fiscais recorrentes', text: 'Emita recibos verdes por cada reserva, declare rendimentos no IRS anual e entregue taxas turísticas municipais quando aplicável.' },
+    ],
+    faqItems: [
+      { question: 'Posso abrir AL num imóvel arrendado?', answer: 'Sim, mas apenas com autorização expressa e escrita do proprietário/senhorio. Sem ela, o registo pode ser cancelado e está sujeito a coimas.' },
+      { question: 'Quanto tempo demora o registo?', answer: 'O número de registo provisório é atribuído imediatamente após submissão online. A câmara municipal tem 60 dias para verificar e confirmar (ou cancelar) o registo.' },
+      { question: 'O que acontece se operar sem registo?', answer: 'Operar AL sem registo é ilegal e pode resultar em coimas entre €2.500 e €50.000, dependendo da gravidade da infração.' },
+      { question: 'Tenho de informar os hóspedes estrangeiros à SEF/AIMA?', answer: 'Sim. É obrigatório comunicar os dados dos hóspedes estrangeiros à AIMA através do sistema SIBA, no prazo de 3 dias após o check-in.' },
+    ],
     content: `
 <h2>O que é o Alojamento Local?</h2>
 <p>O Alojamento Local (AL) é a atividade de prestação de serviços de alojamento temporário a turistas, em estabelecimentos que não reúnam os requisitos para serem considerados empreendimentos turísticos. Em Portugal, esta atividade é regulada pelo <strong>Decreto-Lei n.º 128/2014</strong>, de 29 de agosto, com as alterações introduzidas pela <strong>Lei 56/2023</strong>.</p>
@@ -155,6 +184,11 @@ export const articles: Article[] = [
     publishedAt: '2025-01-20',
     updatedAt: '2026-06-09',
     keywords: ['documentos alojamento local', 'registo AL documentos', 'o que preciso para abrir AL', 'documentação AL portugal'],
+    faqItems: [
+      { question: 'Posso registar AL online sem ir a nenhum serviço presencialmente?', answer: 'Sim. Todo o processo de registo é feito online no BUE (bue.gouv.pt). Não precisa de se deslocar a nenhum serviço público, exceto em casos onde a câmara solicite informação adicional.' },
+      { question: 'Os documentos têm de estar autenticados ou apostilados?', answer: 'Para proprietários portugueses, não é geralmente necessário. Para cidadãos estrangeiros com imóveis em Portugal, alguns documentos podem precisar de tradução e autenticação — verifique junto da câmara municipal.' },
+      { question: 'O que acontece se submeter documentação incompleta?', answer: 'O sistema pode aceitar o pedido provisoriamente, mas a câmara municipal pode solicitar documentação adicional. Se não responder no prazo, o registo pode ser recusado ou cancelado.' },
+    ],
     content: `
 <h2>Documentos obrigatórios para registar AL</h2>
 <p>O registo de Alojamento Local em Portugal é feito online através do Balcão Único Eletrónico (BUE). Para completar o processo, precisa de reunir um conjunto de documentos. Aqui está a lista completa.</p>
@@ -260,6 +294,11 @@ export const articles: Article[] = [
     publishedAt: '2025-02-01',
     updatedAt: '2026-06-09',
     keywords: ['impostos alojamento local 2026', 'fiscalidade AL portugal', 'IRS alojamento local', 'IVA AL', 'contribuição AL'],
+    faqItems: [
+      { question: 'Preciso de contabilista para gerir o meu AL?', answer: 'Para rendimentos baixos (abaixo de €14.500/ano) e em regime simplificado, pode gerir as suas obrigações fiscais sem contabilista. Para situações mais complexas ou volumes superiores, recomenda-se um contabilista ou TOC.' },
+      { question: 'Posso deduzir a renda que pago pelo imóvel?', answer: 'Sim, se pagar renda pelo imóvel e tiver autorização do proprietário para o explorar como AL, a renda pode ser deduzida como despesa em contabilidade organizada ou Categoria F.' },
+      { question: 'A CEAL é devolvida se encerrar o AL?', answer: 'A CEAL é calculada sobre os rendimentos do ano anterior. Se encerrar o AL num determinado ano, não pagará CEAL no ano seguinte pois não terá rendimentos de AL a declarar.' },
+    ],
     content: `
 <h2>A fiscalidade do Alojamento Local em Portugal</h2>
 <p>A fiscalidade do Alojamento Local (AL) é um dos temas que mais dúvidas levanta entre os proprietários. Em Portugal, os rendimentos de AL estão sujeitos a vários impostos e contribuições. Este guia explica todos de forma clara.</p>
@@ -358,6 +397,11 @@ export const articles: Article[] = [
     publishedAt: '2025-02-15',
     updatedAt: '2026-06-09',
     keywords: ['lei 56/2023 alojamento local', 'nova lei AL 2024', 'alterações AL portugal', 'BHRU alojamento local'],
+    faqItems: [
+      { question: 'A lei obrigou proprietários a fechar os seus AL?', answer: 'Não imediatamente. Os registos existentes mantêm-se. No entanto, se o condomínio votar contra, o proprietário pode ter de encerrar no futuro. As zonas de contenção também podem afetar renovações de licença.' },
+      { question: 'O condomínio pode fechar o meu AL retroativamente?', answer: 'A deliberação do condomínio não tem efeito imediato retroativo. Os registos pré-existentes têm períodos de transição. Consulte um advogado se esta situação o afeta.' },
+      { question: 'O que é a ALEP e como pode ajudar?', answer: 'A ALEP (Associação do Alojamento Local em Portugal) é a principal associação do setor. Oferece apoio jurídico, informação atualizada e representa os interesses dos proprietários junto do legislador. Consulte alep.pt.' },
+    ],
     content: `
 <h2>A Lei 56/2023 e o impacto no Alojamento Local</h2>
 <p>A <strong>Lei 56/2023</strong>, aprovada pela Assembleia da República em outubro de 2023, introduziu alterações profundas ao regime do Alojamento Local em Portugal. Esta lei, parte do pacote "Mais Habitação", tinha como objetivo equilibrar o mercado de habitação e reduzir a pressão do turismo em zonas urbanas densas.</p>
@@ -441,6 +485,19 @@ export const articles: Article[] = [
     publishedAt: '2025-03-01',
     updatedAt: '2026-06-09',
     keywords: ['RNAL registo', 'como registar AL RNAL', 'Balcão Único Eletrónico AL', 'número RNAL como obter'],
+    howToSteps: [
+      { name: 'Aceda ao BUE e faça login', text: 'Acesse bue.gouv.pt e autentique-se com Chave Móvel Digital ou Cartão de Cidadão.' },
+      { name: 'Localize o serviço de Alojamento Local', text: 'Pesquise "Alojamento Local" ou navegue em "Alojamento e Turismo" e selecione "Registar Estabelecimento de Alojamento Local".' },
+      { name: 'Preencha os dados do estabelecimento', text: 'Indique tipo de estabelecimento, endereço, capacidade máxima, número de quartos, dados do titular e nome do estabelecimento.' },
+      { name: 'Carregue os documentos', text: 'Faça upload em PDF ou JPG da caderneta predial, comprovativo de seguro e, se arrendatário, autorização do proprietário.' },
+      { name: 'Submeta e obtenha o número provisório', text: 'Após submissão, o sistema gera imediatamente um número de registo provisório, já utilizável nos anúncios.' },
+      { name: 'Aguarde confirmação da câmara', text: 'A câmara municipal tem 60 dias para verificar a conformidade do pedido e confirmar ou cancelar o registo.' },
+    ],
+    faqItems: [
+      { question: 'Posso ter mais do que um registo RNAL?', answer: 'Sim. Cada imóvel tem o seu próprio número RNAL. Se tiver vários imóveis para AL, cada um terá um registo separado.' },
+      { question: 'O registo RNAL é gratuito?', answer: 'A submissão online é geralmente gratuita. Algumas câmaras cobram uma taxa municipal que varia entre €0 e €200.' },
+      { question: 'Posso transferir o RNAL se vender o imóvel?', answer: 'Com a Lei 56/2023, a transmissão automática do registo com o imóvel foi limitada. O novo proprietário terá de solicitar novo registo, sujeito às regras em vigor na altura.' },
+    ],
     content: `
 <h2>O que é o RNAL?</h2>
 <p>O <strong>RNAL (Registo Nacional de Alojamento Local)</strong> é o sistema de registo centralizado de todos os estabelecimentos de Alojamento Local em Portugal. Gerido pelo Turismo de Portugal, o RNAL atribui um número único de registo a cada AL, que é obrigatório para operar legalmente.</p>
@@ -527,6 +584,10 @@ export const articles: Article[] = [
     publishedAt: '2025-03-15',
     updatedAt: '2026-06-09',
     keywords: ['airbnb vs booking alojamento local', 'melhor plataforma AL portugal', 'comissões airbnb booking', 'onde anunciar AL'],
+    faqItems: [
+      { question: 'Posso definir preços diferentes no Airbnb e no Booking?', answer: 'Sim, mas com cuidado. O Booking.com tem cláusula de paridade de preços (deve praticar preços iguais ou melhores que noutros canais). Leia os termos antes de aplicar preços diferenciados.' },
+      { question: 'Como evitar reservas duplas?', answer: 'Usando um channel manager (como Smoobu, Lodgify ou Hostaway), que sincroniza automaticamente a disponibilidade entre todas as plataformas em tempo real.' },
+    ],
     content: `
 <h2>Airbnb vs Booking.com — a comparação que todo o proprietário precisa</h2>
 <p>Quando se trata de anunciar o seu Alojamento Local, Airbnb e Booking.com são as duas plataformas dominantes em Portugal. Mas qual delas deve escolher? Ou deve usar ambas? Este guia dá-lhe uma visão clara de cada plataforma.</p>
@@ -663,6 +724,11 @@ export const articles: Article[] = [
     publishedAt: '2025-03-20',
     updatedAt: '2026-06-09',
     keywords: ['taxa turística municipal AL', 'taxa turística lisboa porto', 'como cobrar taxa turística', 'taxa turística alojamento local 2026'],
+    faqItems: [
+      { question: 'Tenho de emitir recibo pela taxa turística?', answer: 'Sim. A taxa turística cobrada deve constar na fatura/recibo emitida ao hóspede, separada do valor do alojamento.' },
+      { question: 'A taxa turística conta para o IVA?', answer: 'Não. A taxa turística não está sujeita a IVA, pois é um encargo fiscal municipal e não um serviço prestado pelo proprietário.' },
+      { question: 'E se o hóspede se recusar a pagar a taxa turística?', answer: 'Informe claramente no anúncio e nas comunicações pré-check-in que a taxa é obrigatória por lei. Se o hóspede recusar, terá de pagar do seu bolso — o que não é recomendável.' },
+    ],
     content: `
 <h2>O que é a taxa turística municipal?</h2>
 <p>A taxa turística (ou taxa de dormida) é um valor cobrado por cada noite de hospedagem, por hóspede adulto, em estabelecimentos de alojamento turístico — incluindo o Alojamento Local. É uma taxa <strong>cobrada ao hóspede</strong>, mas o proprietário do AL é responsável por a recolher e entregar à câmara municipal.</p>
@@ -741,6 +807,11 @@ export const articles: Article[] = [
     publishedAt: '2025-04-01',
     updatedAt: '2026-06-09',
     keywords: ['condomínio alojamento local', 'condomínio pode proibir AL', 'lei condomínio AL 2024', 'veto condomínio AL'],
+    faqItems: [
+      { question: 'O condomínio pode proibir AL num edifício sem regime de propriedade horizontal?', answer: 'Apenas os edifícios em regime de propriedade horizontal têm assembleia de condóminos com estes poderes. Em edifícios sem este regime, as regras podem ser diferentes.' },
+      { question: 'Se o condomínio votar contra, perco imediatamente o meu registo RNAL?', answer: 'Não imediatamente. A lei prevê períodos de transição. Consulte um advogado para perceber o calendário que se aplica ao seu caso.' },
+      { question: 'Posso vender o imóvel com o AL ativo se o condomínio votou contra?', answer: 'O comprador não herdará o AL (pela Lei 56/2023, a transmissão é limitada). E se o condomínio deliberou contra, o comprador não poderá sequer registar novo AL.' },
+    ],
     content: `
 <h2>O condomínio e o Alojamento Local — o que mudou</h2>
 <p>Com a <strong>Lei 56/2023</strong>, a relação entre proprietários de Alojamento Local e os seus condomínios mudou significativamente. Esta lei atribuiu aos condomínios o poder de se opor à atividade de AL nas frações do edifício, o que gerou muita incerteza e preocupação entre os proprietários.</p>
@@ -823,6 +894,11 @@ export const articles: Article[] = [
     publishedAt: '2025-04-15',
     updatedAt: '2026-06-09',
     keywords: ['IRS alojamento local categoria B', 'IRS AL categoria F', 'como declarar AL IRS', 'IRS AL 2026'],
+    faqItems: [
+      { question: 'Posso mudar de Categoria B para Categoria F de um ano para o outro?', answer: 'Sim, pode optar pela categoria mais vantajosa a cada ano, dentro das regras aplicáveis. Consulte um contabilista para perceber qual é mais favorável no seu caso.' },
+      { question: 'O que acontece se não declarar os rendimentos de AL?', answer: 'A não declaração é considerada fraude fiscal, sujeita a coimas e juros compensatórios. As plataformas como Airbnb e Booking.com reportam dados às autoridades fiscais. Não vale a pena o risco.' },
+      { question: 'Posso deduzir as comissões das plataformas no IRS?', answer: 'Em Categoria F ou em contabilidade organizada (Categoria B), sim. As comissões pagas ao Airbnb e Booking.com são uma despesa de exploração dedutível.' },
+    ],
     content: `
 <h2>Como declarar rendimentos de AL no IRS</h2>
 <p>Os rendimentos provenientes de Alojamento Local devem ser declarados no IRS anualmente, na campanha fiscal que decorre entre abril e junho. A grande questão é: em que categoria declarar?</p>
@@ -924,6 +1000,11 @@ export const articles: Article[] = [
     publishedAt: '2025-05-01',
     updatedAt: '2026-06-09',
     keywords: ['quanto custa abrir alojamento local', 'custos AL portugal', 'investimento alojamento local', 'abrir AL Portugal quanto custa'],
+    faqItems: [
+      { question: 'Quanto tempo demora a recuperar o investimento inicial?', answer: 'Depende da ocupação e do preço médio por noite. Em zonas turísticas de Lisboa ou Porto, com boa gestão, é possível recuperar o investimento inicial em 3 a 6 meses de operação.' },
+      { question: 'Há ajudas ou incentivos para abrir AL?', answer: 'Existem programas de apoio ao turismo que podem financiar obras de reabilitação. Consulte o Turismo de Portugal e o IAPMEI para programas disponíveis no seu caso.' },
+      { question: 'É necessária uma empresa para operar AL?', answer: 'Não. A grande maioria dos proprietários opera como pessoa singular (trabalhador independente). Criar uma empresa só faz sentido para volumes de negócio elevados ou situações fiscais específicas.' },
+    ],
     content: `
 <h2>Os custos reais de abrir um Alojamento Local</h2>
 <p>Uma das primeiras perguntas de quem está a pensar abrir um Alojamento Local é: quanto vai custar? A boa notícia é que o registo em si é relativamente acessível. Os custos mais significativos são geralmente a preparação do imóvel e os custos operacionais recorrentes.</p>

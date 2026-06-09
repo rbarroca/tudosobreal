@@ -59,10 +59,10 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">
+                <Link to="/politica-de-privacidade" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">
                   <Shield className="w-4 h-4" />
                   <span>Política de Privacidade</span>
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors duration-200">

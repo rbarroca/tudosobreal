@@ -9,6 +9,7 @@ import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
 import { ArticlePage } from './pages/ArticlePage';
 import { BlogPage } from './pages/BlogPage';
+import { PrivacyPage } from './pages/PrivacyPage';
 
 const homepageSchema = {
   '@context': 'https://schema.org',
@@ -67,6 +68,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/guias" element={<BlogPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/politica-de-privacidade" element={<PrivacyPage />} />
         <Route path="/:slug" element={<ArticlePage />} />
         <Route path="/:cat/:slug" element={<ArticlePage />} />
       </Routes>

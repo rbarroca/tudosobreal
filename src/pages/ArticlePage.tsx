@@ -28,21 +28,52 @@ export function ArticlePage() {
     { label: article.title },
   ];
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: article.title,
-    description: article.description,
-    datePublished: article.publishedAt,
-    dateModified: article.updatedAt,
-    author: { '@type': 'Organization', name: 'Tudo sobre Alojamento Local' },
-    publisher: { '@type': 'Organization', name: 'Tudo sobre Alojamento Local', url: 'https://tudosobrealojamentolocal.pt' },
-    ...(article.schema || {}),
-  };
+  const schemas: object[] = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: article.title,
+      description: article.description,
+      datePublished: article.publishedAt,
+      dateModified: article.updatedAt,
+      author: { '@type': 'Organization', name: 'Tudo sobre Alojamento Local' },
+      publisher: { '@type': 'Organization', name: 'Tudo sobre Alojamento Local', url: 'https://tudosobrealojamentolocal.pt' },
+      ...(article.schema || {}),
+    },
+  ];
+
+  if (article.howToSteps) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: article.title,
+      description: article.description,
+      step: article.howToSteps.map((s, i) => ({
+        '@type': 'HowToStep',
+        position: i + 1,
+        name: s.name,
+        text: s.text,
+      })),
+    });
+  }
+
+  if (article.faqItems) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: article.faqItems.map(f => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    });
+  }
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {schemas.map((s, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
+      ))}
       <Header />
       <main className="bg-gray-50 min-h-screen">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
