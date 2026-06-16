@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { BookSection } from './components/BookSection';
@@ -71,21 +71,19 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/guias" element={<BlogPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/politica-de-privacidade" element={<PrivacyPage />} />
-        {/* Páginas de categoria — têm de vir antes de /:slug */}
-        <Route path="/registar-alojamento-local" element={<CategoryPage />} />
-        <Route path="/fiscalidade-alojamento-local" element={<CategoryPage />} />
-        <Route path="/legislacao-al" element={<CategoryPage />} />
-        <Route path="/gerir-alojamento-local" element={<CategoryPage />} />
-        <Route path="/:cat/:slug" element={<ArticlePage />} />
-        <Route path="/:slug" element={<ArticlePage />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/guias" element={<BlogPage />} />
+      <Route path="/blog" element={<BlogPage />} />
+      <Route path="/politica-de-privacidade" element={<PrivacyPage />} />
+      {/* Páginas de categoria — têm de vir antes de /:slug */}
+      <Route path="/registar-alojamento-local" element={<CategoryPage />} />
+      <Route path="/fiscalidade-alojamento-local" element={<CategoryPage />} />
+      <Route path="/legislacao-al" element={<CategoryPage />} />
+      <Route path="/gerir-alojamento-local" element={<CategoryPage />} />
+      <Route path="/:cat/:slug" element={<ArticlePage />} />
+      <Route path="/:slug" element={<ArticlePage />} />
+    </Routes>
   );
 }
 

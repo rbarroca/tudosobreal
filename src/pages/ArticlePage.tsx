@@ -14,7 +14,9 @@ export function ArticlePage() {
   const article = getArticleBySlug(slug);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, [slug]);
 
   if (!article) return <Navigate to="/" replace />;

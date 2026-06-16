@@ -53,7 +53,9 @@ export function CategoryPage() {
   const meta = categories.find(c => c.slug === slug);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   if (!meta) return <Navigate to="/guias" replace />;
