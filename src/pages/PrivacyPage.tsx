@@ -57,7 +57,7 @@ export function PrivacyPage() {
               <h2>5. Partilha de dados</h2>
               <p>Os seus dados podem ser partilhados com os seguintes subcontratantes, exclusivamente para prestar os serviços descritos:</p>
               <ul>
-                <li><strong>Supabase</strong> (supabase.com) — armazenamento seguro da base de dados de subscritores, com servidores na União Europeia.</li>
+                <li><strong>Formspree</strong> (formspree.io) — processamento seguro de formulários de subscrição, com servidores nos Estados Unidos e adequações RGPD aplicáveis.</li>
               </ul>
               <p>Não partilhamos os seus dados com mais nenhuma entidade terceira.</p>
 

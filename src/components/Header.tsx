@@ -35,7 +35,7 @@ export function Header() {
               href="https://calculadoraal.pt"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors"
+              className="ml-2 bg-orange-700 hover:bg-orange-800 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors"
             >
               Simular rentabilidade →
             </a>
@@ -58,7 +58,7 @@ export function Header() {
             href="https://calculadoraal.pt"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-orange-500 text-white text-sm font-bold px-4 py-2 rounded-lg text-center mt-2"
+            className="block bg-orange-700 text-white text-sm font-bold px-4 py-2 rounded-lg text-center mt-2"
           >
             Simular rentabilidade →
           </a>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
@@ -7,11 +7,12 @@ import { BenefitsSection } from './components/BenefitsSection';
 import { CalculatorSection } from './components/CalculatorSection';
 import { FinalCTASection } from './components/FinalCTASection';
 import { Footer } from './components/Footer';
-import { ArticlePage } from './pages/ArticlePage';
-import { BlogPage } from './pages/BlogPage';
-import { CategoryPage } from './pages/CategoryPage';
-import { PrivacyPage } from './pages/PrivacyPage';
 import { PageMeta } from './components/PageMeta';
+
+const ArticlePage = lazy(() => import('./pages/ArticlePage').then(m => ({ default: m.ArticlePage })));
+const BlogPage = lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
+const CategoryPage = lazy(() => import('./pages/CategoryPage').then(m => ({ default: m.CategoryPage })));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })));
 
 const homepageSchema = {
   '@context': 'https://schema.org',
@@ -71,6 +72,7 @@ function HomePage() {
 
 function App() {
   return (
+    <Suspense fallback={<div className="min-h-screen" />}>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/guias" element={<BlogPage />} />
@@ -84,6 +86,7 @@ function App() {
       <Route path="/:cat/:slug" element={<ArticlePage />} />
       <Route path="/:slug" element={<ArticlePage />} />
     </Routes>
+    </Suspense>
   );
 }
 

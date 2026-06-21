@@ -10,9 +10,9 @@
     <meta property="og:site_name" content="Tudo sobre Alojamento Local" />
     <meta name="twitter:card" content="summary_large_image" />
     <!--app-head-->
-    <!-- GA4 diferido — não bloqueia render -->
+    <!-- GA4 diferido com requestIdleCallback — não bloqueia render nem hydration -->
     <script>
-      window.addEventListener('load', function() {
+      function loadGA4() {
         var s = document.createElement('script');
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RW1507NGF';
         s.async = true;
@@ -21,8 +21,14 @@
         function gtag(){dataLayer.push(arguments);}
         window.gtag = gtag;
         gtag('js', new Date());
-        gtag('config', 'G-2RW1507NGF');
-      });
+        gtag('config', 'G-2RW1507NGF', { 'send_page_view': false });
+        gtag('event', 'page_view');
+      }
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadGA4, { timeout: 4000 });
+      } else {
+        setTimeout(loadGA4, 3500);
+      }
     </script>
   </head>
   <body>
