@@ -6,6 +6,7 @@ import { BookSection } from './components/BookSection';
 import { BenefitsSection } from './components/BenefitsSection';
 import { CalculatorSection } from './components/CalculatorSection';
 import { FinalCTASection } from './components/FinalCTASection';
+import { FeaturedGuidesSection } from './components/FeaturedGuidesSection';
 import { Footer } from './components/Footer';
 import { PageMeta } from './components/PageMeta';
 
@@ -62,6 +63,7 @@ function HomePage() {
         <HeroSection />
         <BookSection />
         <BenefitsSection />
+        <FeaturedGuidesSection />
         <CalculatorSection />
         <FinalCTASection />
       </main>
