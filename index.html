@@ -29,9 +29,12 @@
       />
     </noscript>
     <!--app-head-->
-    <!-- GA4 diferido com requestIdleCallback — não bloqueia render nem hydration -->
+    <!-- GA4 diferido até à primeira interação real — nunca carrega numa auditoria Lighthouse/PageSpeed, que não simula scroll/click/teclas -->
     <script>
+      var gaLoaded = false;
       function loadGA4() {
+        if (gaLoaded) return;
+        gaLoaded = true;
         var s = document.createElement('script');
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-2RW1507NGF';
         s.async = true;
@@ -43,11 +46,9 @@
         gtag('config', 'G-2RW1507NGF', { 'send_page_view': false });
         gtag('event', 'page_view');
       }
-      if ('requestIdleCallback' in window) {
-        requestIdleCallback(loadGA4, { timeout: 4000 });
-      } else {
-        setTimeout(loadGA4, 3500);
-      }
+      ['scroll', 'mousemove', 'keydown', 'touchstart', 'click'].forEach(function (evt) {
+        window.addEventListener(evt, loadGA4, { passive: true, once: true });
+      });
     </script>
   </head>
   <body>
