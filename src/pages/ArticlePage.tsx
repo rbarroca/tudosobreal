@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { ArticleCard } from '../components/ArticleCard';
 import { PageMeta } from '../components/PageMeta';
-import { Calendar, RefreshCw, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export function ArticlePage() {
   const params = useParams<{ slug?: string; cat?: string }>();
@@ -94,14 +94,6 @@ export function ArticlePage() {
               <span className="text-xs font-semibold bg-white/20 px-3 py-1 rounded-pill">{article.category}</span>
               <h1 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-black tracking-[-0.02em] leading-tight">{article.title}</h1>
               <p className="mt-3 text-white/70 text-lg">{article.description}</p>
-              <div className="mt-6 flex flex-wrap gap-4 text-sm text-white/60">
-                <span className="flex items-center gap-1">
-                  <Calendar className="w-4 h-4" /> Publicado: {new Date(article.publishedAt).toLocaleDateString('pt-PT')}
-                </span>
-                <span className="flex items-center gap-1">
-                  <RefreshCw className="w-4 h-4" /> Atualizado: {new Date(article.updatedAt).toLocaleDateString('pt-PT')}
-                </span>
-              </div>
             </div>
 
             <div
