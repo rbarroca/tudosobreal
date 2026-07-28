@@ -12,9 +12,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap&subset=latin,latin-ext"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap&subset=latin,latin-ext"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap&subset=latin,latin-ext"
+        rel="stylesheet"
+      />
+    </noscript>
     <!--app-head-->
     <!-- GA4 diferido com requestIdleCallback — não bloqueia render nem hydration -->
     <script>
