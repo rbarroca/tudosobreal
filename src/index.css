@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --ink-900: #1c1c1e;
+  --ink-700: #48484a;
+  --ink-500: #6b7280;
+  --ink-400: #8a8a8e;
+  --ink-300: #a8a8a8;
+  --ink-200: #c4c4c4;
+
+  --surface-page: #ffffff;
+  --surface-subtle: #fafafa;
+  --surface-ink: #1c1c1e;
+
+  --border-strong: #e2e2e2;
+  --border-default: #ededed;
+  --border-soft: #ececec;
+  --border-faint: #efefef;
+
+  --success: #0b7568;
+  --warning: #b45309;
+  --danger: #dc2626;
+  --info: #1d4ed8;
+
+  --shadow-card: 0 18px 40px rgba(0, 0, 0, 0.1);
+  --shadow-float: 0 30px 70px rgba(0, 0, 0, 0.3);
+  --shadow-nav: 0 8px 30px rgba(0, 0, 0, 0.14);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.18s;
+  --dur-base: 0.4s;
+
+  --scrim-hero: linear-gradient(105deg, rgba(15, 15, 18, 0.82) 0%, rgba(15, 15, 18, 0.55) 42%, rgba(15, 15, 18, 0.12) 100%);
+  --scrim-card: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+[data-site="tudosobreal"] {
+  --accent-ui: #2563eb;   /* blue-600 — 5.17:1, passes AA body and large */
+  --accent-text: #1d4ed8; /* blue-700 — 6.30:1, extra safety margin for body copy/links */
+  --accent-tint: rgba(37, 99, 235, 0.12);
+  --accent-ring: rgba(37, 99, 235, 0.35);
+}
+
+body {
+  font-family: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink-900);
+  background: var(--surface-page);
+}

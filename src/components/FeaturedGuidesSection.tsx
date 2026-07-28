@@ -5,7 +5,6 @@ import { ArrowRight, FileText, DollarSign, Scale, Home, Settings } from 'lucide-
 const guides = [
   {
     icon: Home,
-    color: 'from-blue-500 to-blue-600',
     title: 'Como abrir Alojamento Local em Portugal',
     description: 'Guia passo a passo com todos os requisitos legais, documentos necessários e o processo completo de registo.',
     href: '/como-abrir-alojamento-local',
@@ -13,7 +12,6 @@ const guides = [
   },
   {
     icon: FileText,
-    color: 'from-green-500 to-green-600',
     title: 'Documentos para registar Alojamento Local',
     description: 'Lista completa dos documentos obrigatórios para o registo no RNAL e na Câmara Municipal.',
     href: '/registar-alojamento-local/documentos-necessarios',
@@ -21,7 +19,6 @@ const guides = [
   },
   {
     icon: DollarSign,
-    color: 'from-orange-500 to-orange-600',
     title: 'Impostos no Alojamento Local em 2026',
     description: 'IRS, IVA, derrama e obrigações fiscais explicadas de forma clara para proprietários de AL.',
     href: '/fiscalidade-alojamento-local/impostos-al-2026',
@@ -29,7 +26,6 @@ const guides = [
   },
   {
     icon: Scale,
-    color: 'from-purple-500 to-purple-600',
     title: 'Nova lei do Alojamento Local 2024',
     description: 'As principais alterações da lei 56/2023 e o que mudou para proprietários e gestoras de AL.',
     href: '/legislacao-al/nova-lei-al-2024',
@@ -37,7 +33,6 @@ const guides = [
   },
   {
     icon: Settings,
-    color: 'from-teal-500 to-teal-600',
     title: 'Airbnb ou Booking.com — qual a melhor plataforma?',
     description: 'Comparação detalhada entre as principais plataformas de reservas para maximizar a ocupação do seu AL.',
     href: '/gerir-alojamento-local/plataformas-airbnb-booking',
@@ -47,13 +42,13 @@ const guides = [
 
 export function FeaturedGuidesSection() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 lg:py-[72px] bg-white">
+      <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-[1.75rem] lg:text-[2.25rem] tracking-[-0.02em] font-extrabold text-ink-900 mb-4">
             Guias mais consultados
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg lg:text-xl text-ink-500 max-w-2xl mx-auto">
             Informação prática e actualizada sobre todos os aspectos do Alojamento Local em Portugal
           </p>
         </div>
@@ -63,18 +58,18 @@ export function FeaturedGuidesSection() {
             <Link
               key={index}
               to={guide.href}
-              className="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-200 transition-all duration-300 flex flex-col"
+              className="group bg-white border border-line-soft rounded-lg p-6 hover:shadow-card hover:border-accent-ui transition-all duration-[400ms] flex flex-col"
             >
-              <div className={`bg-gradient-to-br ${guide.color} p-3 rounded-xl w-fit mb-4`}>
-                <guide.icon className="w-6 h-6 text-white" />
+              <div className="bg-accent-ui p-3 rounded-sm w-fit mb-4">
+                <guide.icon className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">
+              <h3 className="text-lg font-bold text-ink-900 mb-2 group-hover:text-accent-text transition-colors">
                 {guide.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-4">
+              <p className="text-ink-500 text-sm leading-relaxed flex-1 mb-4">
                 {guide.description}
               </p>
-              <span className="inline-flex items-center text-blue-600 font-semibold text-sm group-hover:gap-2 transition-all">
+              <span className="inline-flex items-center text-accent-text font-semibold text-sm group-hover:gap-2 transition-all">
                 {guide.label}
                 <ArrowRight className="w-4 h-4 ml-1" />
               </span>
@@ -85,7 +80,7 @@ export function FeaturedGuidesSection() {
         <div className="text-center">
           <Link
             to="/guias"
-            className="inline-flex items-center gap-2 bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold px-6 py-3 rounded-full transition-colors"
+            className="inline-flex items-center gap-2 bg-accent-tint hover:opacity-80 text-accent-text font-semibold px-6 py-3 rounded-pill transition-opacity"
           >
             Ver todos os guias
             <ArrowRight className="w-4 h-4" />

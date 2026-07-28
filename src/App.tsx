@@ -2,10 +2,9 @@ import React, { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
-import { BookSection } from './components/BookSection';
 import { BenefitsSection } from './components/BenefitsSection';
 import { CalculatorSection } from './components/CalculatorSection';
-import { FinalCTASection } from './components/FinalCTASection';
+import { FindManagerCTASection } from './components/FindManagerCTASection';
 import { FeaturedGuidesSection } from './components/FeaturedGuidesSection';
 import { Footer } from './components/Footer';
 import { PageMeta } from './components/PageMeta';
@@ -49,10 +48,10 @@ function HomePage() {
   return (
     <div className="min-h-screen">
       <PageMeta
-        title="Tudo sobre Alojamento Local | Como abrir e gerir AL em Portugal"
-        description="Informação prática sobre como abrir, registar e gerir um Alojamento Local em Portugal. Requisitos legais, fiscalidade e boas práticas."
+        title="Tudo sobre Alojamento Local | Guia completo para Portugal 2026"
+        description="Guia prático e actualizado sobre como abrir, registar e gerir um Alojamento Local em Portugal. Requisitos legais, fiscalidade, registo RNAL e boas práticas."
         canonical="/"
-        keywords={['alojamento local portugal', 'como abrir alojamento local', 'guia al 2026']}
+        keywords={['alojamento local portugal', 'como abrir alojamento local', 'guia alojamento local 2026', 'registar alojamento local']}
       />
       <script
         type="application/ld+json"
@@ -61,11 +60,10 @@ function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <BookSection />
         <BenefitsSection />
         <FeaturedGuidesSection />
         <CalculatorSection />
-        <FinalCTASection />
+        <FindManagerCTASection />
       </main>
       <Footer />
     </div>

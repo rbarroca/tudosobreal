@@ -11,7 +11,6 @@ interface CategoryMeta {
   slug: string
   title: string
   description: string
-  gradient: string
 }
 
 const categories: CategoryMeta[] = [
@@ -19,31 +18,26 @@ const categories: CategoryMeta[] = [
     slug: 'como-abrir-alojamento-local',
     title: 'Como Abrir Alojamento Local',
     description: 'Para quem quer abrir um Alojamento Local em Portugal e não sabe por onde começar.',
-    gradient: 'from-blue-600 to-blue-800',
   },
   {
     slug: 'registar-alojamento-local',
     title: 'Registo de Alojamento Local',
     description: 'Documentos, prazos e o que esperar do processo de registo no RNAL.',
-    gradient: 'from-green-600 to-green-800',
   },
   {
     slug: 'fiscalidade-alojamento-local',
     title: 'Fiscalidade do Alojamento Local',
     description: 'Impostos, IRS, taxas municipais e o que o fisco espera de si enquanto proprietário de AL.',
-    gradient: 'from-orange-500 to-orange-700',
   },
   {
     slug: 'legislacao-al',
     title: 'Legislação do Alojamento Local',
     description: 'Da Lei 56/2023 às regras de condomínio: as obrigações legais que precisa de conhecer.',
-    gradient: 'from-purple-600 to-purple-800',
   },
   {
     slug: 'gerir-alojamento-local',
     title: 'Gerir Alojamento Local',
     description: 'Plataformas, preços e boas práticas para gerir o seu alojamento no dia a dia.',
-    gradient: 'from-teal-600 to-teal-800',
   },
 ];
 
@@ -86,19 +80,19 @@ export function CategoryPage() {
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Header />
-      <main className="bg-gray-50 min-h-screen">
-        <div className={`bg-gradient-to-br ${meta.gradient} text-white py-16`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="bg-surface-subtle min-h-screen">
+        <div className="bg-surface-ink text-white py-16">
+          <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
             <Breadcrumb items={[{ label: meta.title }]} variant="light" />
-            <h1 className="text-3xl sm:text-4xl font-bold">{meta.title}</h1>
-            <p className="mt-4 text-white/80 text-lg max-w-2xl">{meta.description}</p>
+            <h1 className="text-3xl sm:text-4xl font-black tracking-[-0.02em]">{meta.title}</h1>
+            <p className="mt-4 text-white/70 text-lg max-w-2xl">{meta.description}</p>
             <p className="mt-3 text-sm text-white/60">
               {categoryArticles.length} {categoryArticles.length === 1 ? 'artigo' : 'artigos'}
             </p>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-12">
           {categoryArticles.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {categoryArticles.map(article => (
@@ -106,7 +100,7 @@ export function CategoryPage() {
               ))}
             </div>
           ) : (
-            <p className="text-gray-500 text-center py-12">Brevemente — conteúdo em preparação.</p>
+            <p className="text-ink-500 text-center py-12">Brevemente — conteúdo em preparação.</p>
           )}
         </div>
       </main>

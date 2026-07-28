@@ -6,7 +6,7 @@ import { Footer } from '../components/Footer';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { ArticleCard } from '../components/ArticleCard';
 import { PageMeta } from '../components/PageMeta';
-import { Calendar, RefreshCw } from 'lucide-react';
+import { Calendar, RefreshCw, ArrowRight } from 'lucide-react';
 
 export function ArticlePage() {
   const params = useParams<{ slug?: string; cat?: string }>();
@@ -85,16 +85,16 @@ export function ArticlePage() {
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
       ))}
       <Header />
-      <main className="bg-gray-50 min-h-screen">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <main className="bg-surface-subtle min-h-screen">
+        <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-10 py-12">
           <Breadcrumb items={breadcrumbs} />
 
-          <article className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 px-8 pt-10 pb-12 text-white">
-              <span className="text-xs font-semibold bg-white/20 px-3 py-1 rounded-full">{article.category}</span>
-              <h1 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{article.title}</h1>
-              <p className="mt-3 text-blue-100 text-lg">{article.description}</p>
-              <div className="mt-6 flex flex-wrap gap-4 text-sm text-blue-200">
+          <article className="bg-white rounded-xl border border-line-soft overflow-hidden">
+            <div className="bg-surface-ink px-8 pt-10 pb-12 text-white">
+              <span className="text-xs font-semibold bg-white/20 px-3 py-1 rounded-pill">{article.category}</span>
+              <h1 className="mt-4 text-2xl sm:text-3xl lg:text-4xl font-black tracking-[-0.02em] leading-tight">{article.title}</h1>
+              <p className="mt-3 text-white/70 text-lg">{article.description}</p>
+              <div className="mt-6 flex flex-wrap gap-4 text-sm text-white/60">
                 <span className="flex items-center gap-1">
                   <Calendar className="w-4 h-4" /> Publicado: {new Date(article.publishedAt).toLocaleDateString('pt-PT')}
                 </span>
@@ -105,27 +105,28 @@ export function ArticlePage() {
             </div>
 
             <div
-              className="px-8 py-10 prose prose-blue max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h3:text-xl prose-p:text-gray-700 prose-li:text-gray-700 prose-strong:text-gray-900"
+              className="px-8 py-10 prose max-w-none prose-headings:font-extrabold prose-headings:text-ink-900 prose-h2:text-2xl prose-h3:text-xl prose-p:text-ink-500 prose-li:text-ink-500 prose-strong:text-ink-900 prose-a:text-accent-text prose-a:no-underline hover:prose-a:underline"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
           </article>
 
-          <div className="mt-8 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white text-center">
+          <div className="mt-8 bg-surface-ink rounded-xl p-8 text-white text-center">
             <h2 className="text-xl font-bold">Calcule a rentabilidade do seu AL</h2>
-            <p className="mt-2 text-orange-100">Use a nossa calculadora gratuita para simular receitas e custos.</p>
+            <p className="mt-2 text-white/70">Use a nossa calculadora gratuita para simular receitas e custos.</p>
             <a
               href="https://calculadoraal.pt"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block bg-white text-orange-600 font-bold px-6 py-3 rounded-xl hover:bg-orange-50 transition-colors"
+              className="mt-4 inline-flex items-center gap-2 bg-white text-accent-text font-bold px-6 py-3 rounded-md hover:opacity-90 transition-opacity duration-[180ms]"
             >
-              Simula a rentabilidade do teu AL gratuitamente →
+              Simula a rentabilidade do teu AL gratuitamente
+              <ArrowRight className="w-4 h-4" />
             </a>
           </div>
 
           {others.length > 0 && (
             <div className="mt-12">
-              <h2 className="text-xl font-bold text-gray-900 mb-6">Artigos relacionados</h2>
+              <h2 className="text-xl font-bold text-ink-900 mb-6">Artigos relacionados</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {others.map(a => <ArticleCard key={a.slug} article={a} />)}
               </div>

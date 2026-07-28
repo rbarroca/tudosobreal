@@ -15,16 +15,16 @@ export function BlogPage() {
         keywords={['guias alojamento local', 'artigos AL portugal', 'informação alojamento local']}
       />
       <Header />
-      <main className="bg-gray-50 min-h-screen">
-        <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl sm:text-4xl font-bold">Guias e Artigos</h1>
-            <p className="mt-4 text-blue-100 text-lg max-w-2xl mx-auto">
+      <main className="bg-surface-subtle min-h-screen">
+        <div className="bg-surface-ink text-white py-16">
+          <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 text-center">
+            <h1 className="text-3xl sm:text-4xl font-black tracking-[-0.02em]">Guias e Artigos</h1>
+            <p className="mt-4 text-white/70 text-lg max-w-2xl mx-auto">
               Tudo o que precisa de saber sobre Alojamento Local em Portugal — guias práticos, legislação atualizada e dicas de gestão.
             </p>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.map(article => <ArticleCard key={article.slug} article={article} />)}
           </div>

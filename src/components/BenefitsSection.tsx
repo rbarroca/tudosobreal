@@ -7,53 +7,49 @@ export function BenefitsSection() {
       icon: Clock,
       title: 'Poupa tempo',
       description: 'Toda a informação reunida num único guia prático',
-      color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Shield,
       title: 'Evita multas',
       description: 'Saiba exatamente o que a lei realmente exige',
-      color: 'from-green-500 to-green-600'
     },
     {
       icon: BookOpen,
       title: 'Passo a passo prático',
       description: 'Explicado em linguagem clara e acessível',
-      color: 'from-orange-500 to-orange-600'
     },
     {
       icon: RefreshCw,
       title: 'Sempre atualizado',
       description: 'Baseado nas alterações mais recentes da lei',
-      color: 'from-purple-500 to-purple-600'
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 lg:py-[72px] bg-surface-subtle">
+      <div className="max-w-[1100px] mx-auto px-5 sm:px-6 lg:px-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-[1.75rem] lg:text-[2.25rem] tracking-[-0.02em] font-extrabold text-ink-900 mb-4">
             Porquê escolher este guia?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg lg:text-xl text-ink-500 max-w-3xl mx-auto">
             Para que não perca tempo a tentar perceber o que a lei realmente exige
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
+              className="bg-white rounded-lg p-6 border border-line-faint hover:shadow-card transition-shadow duration-[400ms]"
             >
-              <div className={`bg-gradient-to-br ${benefit.color} p-4 rounded-xl w-fit mb-6`}>
-                <benefit.icon className="w-8 h-8 text-white" aria-label={`Ícone ${benefit.title}`} />
+              <div className="bg-accent-ui p-3 rounded-sm w-fit mb-6">
+                <benefit.icon className="w-6 h-6 text-white" aria-label={`Ícone ${benefit.title}`} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-lg font-bold text-ink-900 mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-ink-500 leading-relaxed">
                 {benefit.description}
               </p>
             </div>

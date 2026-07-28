@@ -43,10 +43,10 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
   };
   if (isSubmitted) {
     return (
-      <div className={`bg-green-50 border border-green-200 rounded-lg p-6 text-center ${className}`}>
-        <CheckCircle className="w-12 h-12 text-green-600 mx-auto mb-4" />
-        <div className="text-green-600 font-semibold mb-2">Obrigado!</div>
-        <div className="text-green-700">Será notificado assim que o livro estiver disponível.</div>
+      <div className={`bg-success/10 border border-success rounded-lg p-6 text-center ${className}`}>
+        <CheckCircle className="w-10 h-10 text-success mx-auto mb-4" />
+        <div className="text-success font-semibold mb-2">Obrigado!</div>
+        <div className="text-ink-700">Será notificado assim que o livro estiver disponível.</div>
       </div>
     );
   }
@@ -54,34 +54,34 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
   return (
     <div className={className}>
       {error && (
-        <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4 flex items-center space-x-2">
-          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0" />
-          <span className="text-red-700">{error}</span>
+        <div className="bg-danger/10 border border-danger rounded-lg p-4 mb-4 flex items-center space-x-2">
+          <AlertCircle className="w-5 h-5 text-danger flex-shrink-0" />
+          <span className="text-danger">{error}</span>
         </div>
       )}
-      
+
       <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="relative">
-          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-ink-400 w-5 h-5" />
           <input
             type="text"
             placeholder="O seu nome"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full pl-10 pr-4 py-3 border border-line-strong rounded-sm focus:outline-none focus:border-accent-ui focus:shadow-[0_0_0_3px_var(--accent-ring)] transition-all duration-[180ms]"
             disabled={isLoading}
             required
           />
         </div>
         <div className="relative">
-          <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+          <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-ink-400 w-5 h-5" />
           <input
             type="email"
             placeholder="O seu email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+            className="w-full pl-10 pr-4 py-3 border border-line-strong rounded-sm focus:outline-none focus:border-accent-ui focus:shadow-[0_0_0_3px_var(--accent-ring)] transition-all duration-[180ms]"
             disabled={isLoading}
             required
           />
@@ -90,7 +90,7 @@ export function EmailForm({ className = '', buttonText = 'Quero ser notificado!'
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-105 disabled:hover:scale-100 shadow-lg hover:shadow-xl disabled:shadow-md"
+        className="w-full bg-accent-ui hover:opacity-90 disabled:bg-ink-300 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-md transition-opacity duration-[180ms]"
       >
         {isLoading ? 'A guardar...' : buttonText}
       </button>

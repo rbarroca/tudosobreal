@@ -14,10 +14,10 @@ interface Props {
 export function Breadcrumb({ items, variant = 'dark' }: Props) {
   const isLight = variant === 'light';
 
-  const baseText = isLight ? 'text-white/70' : 'text-gray-500';
-  const linkHover = isLight ? 'hover:text-white' : 'hover:text-blue-600';
-  const separator = isLight ? 'text-white/40' : 'text-gray-300';
-  const current = isLight ? 'text-white font-medium' : 'text-gray-700';
+  const baseText = isLight ? 'text-white/70' : 'text-ink-500';
+  const linkHover = isLight ? 'hover:text-white' : 'hover:text-accent-text';
+  const separator = isLight ? 'text-white/40' : 'text-ink-300';
+  const current = isLight ? 'text-white font-medium' : 'text-ink-700';
 
   return (
     <nav aria-label="breadcrumb" className={`text-sm ${baseText} mb-6`}>

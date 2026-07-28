@@ -12,15 +12,15 @@ export function PrivacyPage() {
         canonical="/politica-de-privacidade"
       />
       <Header />
-      <main className="bg-gray-50 min-h-screen">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <article className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
-            <div className="bg-gradient-to-br from-blue-600 to-blue-800 px-8 py-10 text-white">
-              <h1 className="text-3xl font-bold">Política de Privacidade</h1>
-              <p className="mt-2 text-blue-100">Última atualização: junho de 2026</p>
+      <main className="bg-surface-subtle min-h-screen">
+        <div className="max-w-3xl mx-auto px-5 sm:px-6 lg:px-10 py-16">
+          <article className="bg-white rounded-xl border border-line-soft overflow-hidden">
+            <div className="bg-surface-ink px-8 py-10 text-white">
+              <h1 className="text-3xl font-black tracking-[-0.02em]">Política de Privacidade</h1>
+              <p className="mt-2 text-white/70">Última atualização: junho de 2026</p>
             </div>
 
-            <div className="px-8 py-10 prose prose-blue max-w-none prose-headings:font-bold prose-h2:text-xl prose-p:text-gray-700 prose-li:text-gray-700">
+            <div className="px-8 py-10 prose max-w-none prose-headings:font-extrabold prose-headings:text-ink-900 prose-h2:text-xl prose-p:text-ink-500 prose-li:text-ink-500 prose-strong:text-ink-900 prose-a:text-accent-text prose-a:no-underline hover:prose-a:underline">
               <h2>1. Quem somos</h2>
               <p>
                 Este website é operado por <strong>Tudo sobre Alojamento Local</strong>, disponível em{' '}
