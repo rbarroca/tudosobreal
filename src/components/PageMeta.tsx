@@ -15,7 +15,7 @@ interface Props {
 
 export function PageMeta({ title, description, canonical, ogType = 'website', keywords }: Props) {
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`;
-  const canonicalUrl = `${BASE_URL}${canonical}`;
+  const canonicalUrl = `${BASE_URL}${canonical === '/' ? '/' : `${canonical}/`}`;
 
   return (
     <Helmet>
